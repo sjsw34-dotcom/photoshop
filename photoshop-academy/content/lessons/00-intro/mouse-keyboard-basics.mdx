@@ -1,0 +1,231 @@
+---
+title: "마우스와 키보드 기본 조작"
+level: 0
+order: 4
+duration: 40
+slug: "mouse-keyboard-basics"
+prerequisites: ["interface-tour"]
+objectives:
+  - "클릭, 더블클릭, 드래그가 각각 언제 쓰이는지 설명할 수 있다"
+  - "Shift, Alt, Ctrl(Cmd) 수정 키의 역할을 한 문장으로 말할 수 있다"
+  - "스페이스바 + 드래그로 화면을 이동할 수 있다"
+keyTerms: ["수정 키", "우클릭", "드래그"]
+practiceFile: null
+hasPractice: true
+---
+
+## 🎯 오늘의 목표
+
+포토샵에서 손가락이 가장 자주 하는 일을 익힐 거예요. 클릭 세 종류와
+수정 키(Modifier Key) 세 개만 알면 거의 모든 작업의 시작이 편해져요.
+
+## 🍎 일상 비유로 먼저 이해하기
+
+**Shift 키**는 "똑바로 해줘"라고 말해주는 키예요. 원을 그릴 때
+Shift를 누르면 정원이 되고, 선을 그을 때 누르면 수평선이나
+수직선만 나와요.
+
+**Alt 키(Mac은 Option)** 는 "하나 더 복사해줘"라고 말해주는 키예요.
+레이어를 Alt 누른 채 드래그하면 원본은 그대로 두고 복사본이
+생겨요.
+
+**Ctrl 키(Mac은 Cmd)** 는 "명령을 실행해줘"라고 말하는 키예요.
+거의 모든 단축키의 출발점이에요.
+
+## 📖 핵심 개념
+
+### 마우스 동작 세 가지
+
+- **클릭(Click)**: 한 번 누르기. 도구 선택, 버튼 누르기에 써요.
+- **더블클릭(Double Click)**: 빠르게 두 번. 레이어 이름 바꾸기,
+  폴더 열기 같은 "더 깊게 들어가기"에 써요.
+- **드래그(Drag)**: 누른 채 끌기. 이동, 선택 영역 만들기,
+  크기 바꾸기에 써요.
+
+### 수정 키 세 가지
+
+수정 키는 다른 동작 위에 "같이 눌러서" 효과를 바꾸는 키예요.
+
+| 키 | 역할 | 예시 |
+|---|---|---|
+| Shift | 비율 유지, 직선, 중복 선택 | Shift+드래그로 정원 그리기 |
+| Alt / Option | 복사, 임시 반전 | Alt+드래그로 레이어 복사 |
+| Ctrl / Cmd | 명령 실행 | Ctrl+S 저장 |
+
+<Callout type="tip" title="두 개 같이 눌러도 돼요">
+Ctrl+Shift+S(다른 이름으로 저장)처럼 수정 키 여러 개를 함께 쓰는
+경우가 많아요. 수정 키끼리는 서로 싸우지 않아요.
+</Callout>
+
+### 우클릭 메뉴
+
+우클릭(Mac은 Control+클릭 또는 트랙패드 두 손가락 탭)은 **"지금 이
+위치에서 할 수 있는 일"** 을 보여주는 작은 메뉴예요. 실수로 눌러도
+그냥 ESC로 닫으면 돼요.
+
+### 스페이스바 + 드래그
+
+화면에 이미지가 너무 커서 한 번에 안 보일 때 쓰는 마법이에요.
+**스페이스바를 누른 채** 마우스를 드래그하면 화면이 따라 움직여요.
+
+## 🖱️ 따라하기
+
+먼저 포토샵에서 아무 이미지 한 장을 열어두세요.
+
+<StepGuide>
+  <Step number={1} title="Shift로 비율을 유지합니다">
+    툴바의 **사각형 도구(U)** 를 선택하고 캔버스에 **Shift를 누른 채**
+    드래그해요. 정사각형이 그려져요. Shift를 안 누르면 아무 비율로
+    나와요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="캔버스에 Shift+드래그로 그려진 정사각형. 옆에 Shift 없이 그린 찌그러진 사각형 비교."
+    />
+  </Step>
+
+  <Step number={2} title="Alt로 복사해봅니다">
+    **레이어 패널**에서 레이어 하나를 **Alt(Option)** 누른 채 위나
+    아래로 드래그하세요. 레이어 복사본이 하나 생겨요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="레이어 패널에서 Alt 드래그로 레이어가 복제된 순간. '레이어 1 복사'가 새로 생김."
+    />
+    <TroubleShoot>
+      Alt를 떼기 전에 마우스를 먼저 떼야 복사가 확정돼요.
+      반대로 떼면 그냥 이동이에요.
+    </TroubleShoot>
+  </Step>
+
+  <Step number={3} title="우클릭 메뉴를 열어봅니다">
+    캔버스 위에서 **우클릭** 해보세요. 지금 선택된 도구에 맞는
+    메뉴가 튀어나와요. ESC로 닫아요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="캔버스 위 우클릭으로 뜬 컨텍스트 메뉴. '레이어 복사', '삭제' 같은 항목이 보임."
+    />
+  </Step>
+
+  <Step number={4} title="스페이스바로 화면을 움직입니다">
+    이미지를 크게 확대해요 (아직 단축키 안 배웠으면 메뉴 **보기 >
+    확대**). 그 다음 **스페이스바를 누른 채 드래그**해서 화면을
+    움직여보세요. 마우스 커서가 손 모양으로 바뀔 거예요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="확대된 이미지 위에서 손바닥 커서가 나타난 모습. 화면이 드래그 방향으로 따라 움직임."
+    />
+  </Step>
+
+  <Step number={5} title="Ctrl+Z로 실수를 되돌립니다">
+    방금 한 작업을 **Ctrl+Z(Mac: Cmd+Z)** 로 한 단계 되돌려요.
+    실수해도 이 키 하나면 돌릴 수 있다는 걸 손에 익혀요.
+    <KeyboardShortcut
+      keys={["Ctrl", "Z"]}
+      mac={["Cmd", "Z"]}
+      description="한 단계 실행취소"
+    />
+  </Step>
+</StepGuide>
+
+## ✅ 오늘의 체크리스트
+
+<Checklist
+  lessonSlug="mouse-keyboard-basics"
+  items={[
+    { id: "shift-ratio", text: "Shift+드래그로 정사각형을 그렸다" },
+    { id: "alt-copy", text: "Alt+드래그로 레이어를 복사해봤다" },
+    { id: "right-click", text: "캔버스에서 우클릭 메뉴를 열어봤다" },
+    { id: "space-pan", text: "스페이스바+드래그로 화면을 움직여봤다" },
+    { id: "undo", text: "Ctrl+Z로 직전 작업을 되돌렸다" },
+  ]}
+/>
+
+## 🧠 이해도 퀴즈
+
+<Quiz lessonSlug="mouse-keyboard-basics">
+  <Question
+    id="q1"
+    prompt="Q1. 원을 그릴 때 '정원(완전한 원)'으로 만들려면 어떤 키를 같이 누르나요?"
+    options={[
+      { text: "Ctrl / Cmd" },
+      { text: "Alt / Option" },
+      { text: "Shift", correct: true },
+      { text: "Tab" },
+    ]}
+    explanation="Shift는 '똑바로'의 역할이에요. 원은 정원, 선은 직선, 사각형은 정사각형으로 잡아줘요."
+  />
+  <Question
+    id="q2"
+    prompt="Q2. 레이어를 원본 유지한 채 복사하려면 어떤 키를 누르고 드래그하나요?"
+    options={[
+      { text: "Shift" },
+      { text: "Alt / Option", correct: true },
+      { text: "Ctrl / Cmd" },
+      { text: "Tab" },
+    ]}
+    explanation="Alt(Mac은 Option)는 '하나 더 만들기' 역할을 해요. 드래그로 이동하면서 복사가 생깁니다."
+  />
+  <Question
+    id="q3"
+    prompt="Q3. 확대된 화면을 좌우로 움직이는 가장 편한 방법은?"
+    options={[
+      { text: "툴바에서 손 도구를 매번 선택한다" },
+      { text: "스페이스바를 누른 채 드래그한다", correct: true },
+      { text: "스크롤바를 매번 움직인다" },
+      { text: "화면을 축소해서 본다" },
+    ]}
+    explanation="스페이스바+드래그는 어떤 도구를 쓰고 있어도 임시로 손 도구가 되는 방법이에요."
+  />
+</Quiz>
+
+## 🎨 오늘의 실습
+
+직접 손을 움직여본 증거를 남겨봐요.
+
+- **시작 사진**: 빈 캔버스(새 문서 아무 크기)의 스크린샷
+- **내 결과**: 그 캔버스에 **Shift+드래그로 그린 정사각형**,
+  **Alt로 복사한 정사각형** 두 개가 나란히 보이는 스크린샷
+
+<PracticeCompare
+  lessonSlug="mouse-keyboard-basics"
+  goal="Shift와 Alt 키를 각각 사용한 결과를 한 화면에 담아 올려보세요"
+  startHint="모양 도구(U) 또는 사각형 선택(M)을 쓰면 쉬워요. 색은 아무거나 괜찮아요."
+  checklist={[
+    "Shift로 그린 정사각형이 삐뚤어지지 않았다",
+    "Alt로 복제한 두 번째 사각형이 나란히 있다",
+    "캔버스 위에 두 도형이 다 보인다",
+  ]}
+/>
+
+## 🔑 꼭 기억할 단축키
+
+<KeyboardShortcut
+  keys={["Ctrl", "Z"]}
+  mac={["Cmd", "Z"]}
+  description="한 단계 실행취소"
+/>
+<KeyboardShortcut
+  keys={["Space"]}
+  mac={["Space"]}
+  description="드래그와 함께 쓰면 화면 이동"
+/>
+
+## 😵 이게 안 돼요 (자주 묻는 문제)
+
+- **Q**: Alt를 누르고 드래그했는데 복사가 안 돼요.
+  **A**: 이동 도구(V) 상태에서 해봐요. 다른 도구 상태에서는 Alt가
+  다른 역할(스포이드 전환 등)을 하기도 해요.
+
+- **Q**: Mac인데 Alt 키가 어디 있어요?
+  **A**: Mac의 **Option** 키가 Alt와 같아요. Cmd 옆에 있어요.
+
+- **Q**: 우클릭이 안 돼요(노트북 트랙패드).
+  **A**: 트랙패드 **두 손가락 탭** 으로 우클릭이에요. 설정에서
+  꺼져 있을 수 있으니 시스템 설정도 확인해요.
+
+- **Q**: 스페이스바를 눌러도 손 모양 커서가 안 떠요.
+  **A**: 문자 입력 도구(T)를 쓰고 있을 땐 스페이스가 띄어쓰기가
+  돼요. 다른 도구로 전환한 뒤 다시 해봐요.
+
+## 🧭 다음 레슨
+
+<NextLessonCard currentSlug="mouse-keyboard-basics" />

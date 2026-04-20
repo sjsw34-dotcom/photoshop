@@ -1,0 +1,250 @@
+---
+title: "이미지 파일 열기와 가져오기"
+level: 0
+order: 6
+duration: 45
+slug: "open-files"
+prerequisites: ["new-document"]
+objectives:
+  - "'열기'와 '가져오기'의 차이를 한 문장으로 설명할 수 있다"
+  - "드래그 앤 드롭으로 이미지를 불러올 수 있다"
+  - "JPG, PNG, PSD 파일의 기본 성격을 구분할 수 있다"
+keyTerms: ["열기", "가져오기", "PSD", "JPG", "PNG"]
+practiceFile: null
+hasPractice: true
+---
+
+## 🎯 오늘의 목표
+
+내 컴퓨터의 사진을 포토샵으로 불러오는 두 가지 방식을 익혀요.
+"열기"와 "가져오기"는 느낌이 비슷해도 결과가 달라요.
+
+## 🍎 일상 비유로 먼저 이해하기
+
+**열기(Open)** 는 사진을 **새 방(새 탭)** 에 두는 거예요. 한 방에
+사진 한 장이에요.
+
+**가져오기(Place/Import)** 는 지금 작업 중인 도화지 **위에** 사진을
+올려놓는 거예요. 스티커를 붙이는 느낌이에요. 기존 도화지는
+그대로 있고, 그 위에 새 레이어로 얹혀요.
+
+디자인 작업은 대부분 **가져오기**로 해요. 여러 이미지를 한 캔버스
+안에 조립해야 하니까요.
+
+## 📖 핵심 개념
+
+### 열기 vs 가져오기
+
+| 동작 | 결과 | 언제 써요 |
+|---|---|---|
+| 열기(Open) | 새 탭에 이미지 한 장만 열림 | 사진 한 장을 단독 편집할 때 |
+| 가져오기(Place Embedded) | 지금 캔버스에 새 레이어로 얹힘 | 여러 이미지를 합칠 때 |
+
+포토샵에는 가져오기가 두 종류 있어요.
+
+- **포함(Place Embedded)**: 이미지를 파일 안에 복사해서 넣어요.
+  원본 파일이 바뀌어도 영향을 안 받아요.
+- **연결(Place Linked)**: 원본 파일을 **참조**만 해요. 원본이
+  바뀌면 포토샵에서도 같이 바뀌어요.
+
+<Callout type="tip" title="입문 땐 '포함'만 써요">
+'연결'은 팀 작업 등에서 유용하지만 파일 경로가 끊어지면 이미지가
+사라져요. 처음엔 **포함** 방식이 안전해요.
+</Callout>
+
+### 드래그 앤 드롭
+
+탐색기(Finder)에서 이미지 파일을 **포토샵 아이콘**이나 이미 열려
+있는 **캔버스 위**로 끌어다 놓으면 자동으로 열려요.
+
+- 포토샵의 **빈 영역**에 놓기 → 열기 (새 탭)
+- 열려 있는 **캔버스 위**에 놓기 → 가져오기 (새 레이어)
+
+### 파일 형식 간단 소개
+
+이 레슨에서는 이름만 익혀요. 저장 포맷 상세는 레슨 9에서 배워요.
+
+- **JPG(.jpg)**: 가장 흔한 사진 파일. 가볍지만 투명을 못 해요.
+- **PNG(.png)**: 투명 배경을 지원해요. JPG보다 무거워요.
+- **PSD(.psd)**: 포토샵 고유 파일. 레이어가 다 살아 있어요.
+- **TIFF(.tif)**: 고품질 인쇄용. 용량이 매우 커요.
+- **RAW(.cr2, .nef 등)**: 카메라 원본. 색 보정 여지가 큼.
+
+<Callout type="warning" title="JPG로 저장하면 레이어가 사라져요">
+작업 중엔 PSD로 저장해요. 공유용은 마지막에 JPG나 PNG로
+별도 저장해요. 덮어쓰면 되돌리기 힘들어요.
+</Callout>
+
+## 🖱️ 따라하기
+
+준비물로 컴퓨터에 사진 2~3장을 한 폴더에 모아두세요.
+
+<StepGuide>
+  <Step number={1} title="메뉴로 사진 한 장을 엽니다">
+    **파일(File) > 열기(Open)** 또는 **Ctrl+O(Mac: Cmd+O)** 로
+    사진 파일 하나를 골라요. 새 탭에 열려요.
+    <KeyboardShortcut
+      keys={["Ctrl", "O"]}
+      mac={["Cmd", "O"]}
+      description="파일 열기"
+    />
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="포토샵 열기 대화상자. 사진 파일 선택 화면."
+    />
+  </Step>
+
+  <Step number={2} title="드래그 앤 드롭으로 여러 장을 엽니다">
+    탐색기에서 **사진 두 장을 Ctrl로 동시 선택**한 다음 포토샵 빈
+    영역으로 끌어다 놔요. 각 사진이 별도 탭으로 열려요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="두 장의 사진이 포토샵에 별도 탭으로 열린 모습. 상단 탭 바에 파일명 두 개."
+    />
+  </Step>
+
+  <Step number={3} title="새 캔버스에 사진을 '가져오기' 합니다">
+    Ctrl+N으로 **1080x1080 흰색 캔버스** 를 만들어요. 그런 다음
+    **파일 > 포함 가져오기(Place Embedded)** 를 눌러 사진 한 장을
+    골라요. 사진이 캔버스 위에 새 레이어로 얹혀요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="흰 1080 캔버스 위에 가져온 사진이 큰 사각형 선택 상태로 올라가 있음."
+    />
+  </Step>
+
+  <Step number={4} title="크기를 맞추고 확정합니다">
+    사진 모서리의 **파란 핸들**을 **Shift를 누른 채** 안쪽으로
+    드래그해 원하는 크기로 줄여요. 엔터를 누르면 크기가 확정돼요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="핸들을 드래그해 사진이 줄어든 모습. 엔터 확정 직전."
+    />
+    <TroubleShoot>
+      최신 포토샵은 Shift를 안 눌러도 비율이 자동 유지돼요. 화면
+      비율이 이상하면 반대로 Shift를 눌러봐요.
+    </TroubleShoot>
+  </Step>
+
+  <Step number={5} title="드래그로 새 레이어를 추가합니다">
+    탐색기에서 두 번째 사진을 **열려 있는 캔버스 위**로 끌어다
+    놓으세요. 자동으로 가져오기가 실행되고 새 레이어로 얹혀요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="캔버스에 두 번째 사진이 추가돼 두 장이 겹쳐 보이는 모습. 레이어 패널에 레이어 두 개."
+    />
+  </Step>
+
+  <Step number={6} title="레이어 패널에서 결과를 확인합니다">
+    오른쪽 **레이어 패널**에 배경 레이어와 가져온 사진 레이어
+    2개가 쌓인 걸 봐요. 오늘은 여기까지예요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="레이어 패널에 배경 + 사진1 + 사진2 세 레이어가 쌓여 있음."
+    />
+  </Step>
+</StepGuide>
+
+## ✅ 오늘의 체크리스트
+
+<Checklist
+  lessonSlug="open-files"
+  items={[
+    { id: "open-single", text: "메뉴로 사진 한 장을 새 탭에 열었다" },
+    { id: "drag-multiple", text: "여러 장을 드래그 앤 드롭으로 열어봤다" },
+    { id: "place-embedded", text: "한 캔버스에 가져오기로 사진을 얹었다" },
+    { id: "know-diff", text: "열기와 가져오기의 차이를 말할 수 있다" },
+  ]}
+/>
+
+## 🧠 이해도 퀴즈
+
+<Quiz lessonSlug="open-files">
+  <Question
+    id="q1"
+    prompt="Q1. 디자인 작업처럼 '한 캔버스에 여러 이미지를 조립'할 때 쓰는 방식은?"
+    options={[
+      { text: "파일 > 열기" },
+      { text: "파일 > 가져오기(포함)", correct: true },
+      { text: "파일 > 내보내기" },
+      { text: "파일 > 스크립트" },
+    ]}
+    explanation="가져오기(Place)는 현재 캔버스에 새 레이어로 얹어줘요. 조립 작업의 기본입니다."
+  />
+  <Question
+    id="q2"
+    prompt="Q2. 투명한 배경이 필요한 이미지에 적절한 파일 형식은?"
+    options={[
+      { text: "JPG" },
+      { text: "PNG", correct: true },
+      { text: "BMP" },
+      { text: "TIFF" },
+    ]}
+    explanation="JPG는 투명을 지원하지 않아요. PNG는 투명 배경을 담을 수 있어요."
+  />
+  <Question
+    id="q3"
+    prompt="Q3. 작업 중인 포토샵 파일을 '레이어 그대로' 저장하려면?"
+    options={[
+      { text: "JPG로 저장" },
+      { text: "PNG로 저장" },
+      { text: "PSD로 저장", correct: true },
+      { text: "PDF로 저장" },
+    ]}
+    explanation="PSD만 레이어·마스크·스타일을 그대로 보존해요. JPG/PNG는 평평한 이미지로 변해요."
+  />
+</Quiz>
+
+## 🎨 오늘의 실습
+
+두 장의 사진을 한 캔버스에 모아봐요.
+
+- **시작 사진**: 사용할 사진 2장이 탐색기에 보이는 화면
+- **내 결과**: 1080x1080 캔버스에 두 사진이 **좌우 또는 위아래로
+  나란히** 배치된 상태. 레이어 패널에 레이어 2개가 쌓여 있어야 해요
+
+<PracticeCompare
+  lessonSlug="open-files"
+  goal="두 장의 사진을 한 캔버스에 가져와 나란히 배치해서 올려보세요"
+  startHint="사진은 아무거나 괜찮아요. 나중에 합성 실습의 재료가 될 수 있어요."
+  checklist={[
+    "한 캔버스에 두 장이 모두 보인다",
+    "두 사진이 겹치지 않고 나란히 있다",
+    "레이어 패널에 두 레이어가 쌓여 있다",
+  ]}
+/>
+
+## 🔑 꼭 기억할 단축키
+
+<KeyboardShortcut
+  keys={["Ctrl", "O"]}
+  mac={["Cmd", "O"]}
+  description="파일 열기"
+/>
+<KeyboardShortcut
+  keys={["Enter"]}
+  mac={["Return"]}
+  description="가져오기 크기 확정"
+/>
+
+## 😵 이게 안 돼요 (자주 묻는 문제)
+
+- **Q**: 드래그했는데 열리지 않고 "형식을 지원하지 않는다"고 떠요.
+  **A**: HEIC 같은 아이폰 고유 형식일 수 있어요. JPG로 변환 후
+  다시 시도해요. Windows는 HEIC 확장 앱 설치로도 해결.
+
+- **Q**: 가져온 사진이 너무 작아서 안 보여요.
+  **A**: **Ctrl+T(자유변형)** 를 누르고 모서리 핸들을 드래그해
+  원하는 크기로 키우세요.
+
+- **Q**: 여러 장을 동시에 '가져오기'할 수 있나요?
+  **A**: 탐색기에서 **Ctrl로 동시 선택** 후 캔버스에 끌어다 놓으면
+  한 번에 여러 레이어로 들어와요.
+
+- **Q**: 가져온 사진 주위에 이상한 'X 표시'가 있어요.
+  **A**: 가져오기 확정 전의 표시예요. **Enter** 를 눌러 확정하면
+  사라져요.
+
+## 🧭 다음 레슨
+
+<NextLessonCard currentSlug="open-files" />

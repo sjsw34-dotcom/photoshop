@@ -1,0 +1,246 @@
+---
+title: "[실습] 내 사진을 SNS용 정사각형으로"
+level: 0
+order: 10
+duration: 60
+slug: "project-0-instagram-square"
+prerequisites: ["save-formats"]
+objectives:
+  - "1080x1080 정사각형 캔버스에 내 사진을 맞춰 배치할 수 있다"
+  - "자유변형으로 크기와 위치를 조절할 수 있다"
+  - "공유용 JPG로 저장해 어디든 올릴 수 있다"
+keyTerms: ["자유변형", "PSD", "JPG"]
+practiceFile: null
+hasPractice: true
+---
+
+## 🎯 오늘의 목표
+
+지금까지 배운 걸 전부 써서 **내 사진 한 장을 인스타용
+정사각형으로 만들어 저장**할 거예요. 오늘이 Level 0의 **졸업
+시험**이에요.
+
+## 🍎 일상 비유로 먼저 이해하기
+
+오늘 실습은 **요리 실습**과 같아요. 재료(사진)를 가져와서,
+도마(캔버스)에 올리고, 칼(자유변형)로 크기를 맞춘 다음, 도시락통
+(JPG)에 담는 거예요. 아홉 레슨 동안 배운 도구를 전부 한 번씩
+써봅니다.
+
+완성 후 갤러리에 올리면, **오늘이 네 포토샵 여정의 "첫 결과물"**
+이 돼요. 몇 달 뒤 돌아보면 "이때부터 시작했구나" 싶은 중요한
+한 장이에요.
+
+## 📖 핵심 개념
+
+오늘은 새 개념을 배우지 않아요. 지금까지 배운 걸 **한 묶음으로
+연결하는** 레슨이에요.
+
+쓸 기술 목록
+
+- **Ctrl+N** 으로 1080x1080 캔버스 (레슨 5)
+- **드래그 앤 드롭** 으로 사진 가져오기 (레슨 6)
+- **Ctrl+T** 자유변형으로 크기 맞추기
+- **스페이스바 + 드래그** 로 화면 이동 (레슨 7)
+- **Ctrl+Z** 실수하면 되돌리기 (레슨 8)
+- **Ctrl+S** 로 PSD 원본 저장 (레슨 9)
+- **Ctrl+Shift+S** 로 JPG 공유본 저장 (레슨 9)
+
+<Callout type="tip" title="막히면 앞 레슨으로 돌아가요">
+한 단계에서 막히면 위에 적힌 해당 레슨을 1분 다시 읽고 오세요.
+건너뛰고 외우는 것보다 훨씬 오래 남아요.
+</Callout>
+
+## 🖱️ 따라하기
+
+재료: 사진 한 장 (본인 셀카, 풍경, 음식 뭐든 OK)
+
+<StepGuide>
+  <Step number={1} title="1080x1080 정사각형 캔버스를 만듭니다">
+    **Ctrl+N** 으로 새 문서. 폭 **1080 px**, 높이 **1080 px**,
+    해상도 **72**, 색상 **RGB**, 배경 **흰색**. **만들기**.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="새 문서 창에 1080x1080 / 72ppi / RGB 입력 후 만들기 버튼 강조."
+    />
+  </Step>
+
+  <Step number={2} title="사진을 캔버스에 가져옵니다">
+    탐색기에서 사진을 **캔버스 위** 로 드래그 앤 드롭하세요.
+    사진이 새 레이어로 얹혀요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="흰 1080 캔버스 위에 사진이 올라온 상태. 사진에 변환용 사각형 핸들 표시."
+    />
+  </Step>
+
+  <Step number={3} title="자유변형으로 크기를 맞춥니다">
+    사진이 캔버스보다 크면 **모서리 핸들**을 안쪽으로 드래그.
+    비율이 자동 유지돼요. 안 되면 **Shift**를 누른 채 드래그해요.
+    <KeyboardShortcut
+      keys={["Ctrl", "T"]}
+      mac={["Cmd", "T"]}
+      description="자유변형 (이미 가져오기 상태면 생략 가능)"
+    />
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="사진이 캔버스에 맞게 줄어든 모습. 상하좌우 여백이 균등하게 보임."
+    />
+    <TroubleShoot>
+      비율이 찌그러지면 **Ctrl+Z** 로 되돌리고 다시 시도해요.
+    </TroubleShoot>
+  </Step>
+
+  <Step number={4} title="위치를 잡고 확정합니다">
+    사진 **가운데를 드래그** 해 원하는 위치로 옮겨요. 마음에
+    들면 **Enter** 를 눌러 변형을 확정.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="사진이 캔버스 중앙에 예쁘게 배치된 모습. 엔터 확정 직전의 핸들 표시."
+    />
+  </Step>
+
+  <Step number={5} title="작업 원본을 PSD로 저장합니다">
+    **Ctrl+S** 로 PSD 저장. 파일명은 **my-first-square.psd** 같이
+    알아볼 수 있게 지어요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="Photoshop 형식으로 저장하는 창. 파일명 입력된 상태."
+    />
+  </Step>
+
+  <Step number={6} title="공유용 JPG로도 저장합니다">
+    **Ctrl+Shift+S** 로 **JPEG** 선택 후 품질 10으로 저장.
+    같은 폴더에 두 파일(PSD, JPG)이 나란히 생겨요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="탐색기에 my-first-square.psd와 my-first-square.jpg 두 파일이 함께 보임."
+    />
+  </Step>
+
+  <Step number={7} title="실제 인스타처럼 보는지 확인합니다">
+    저장한 **JPG를 더블클릭** 해 윈도우/맥 기본 뷰어로 열어보세요.
+    1080 정사각형이 제대로 보이면 성공.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="기본 이미지 뷰어에 1080 정사각형 JPG가 열린 상태. 포토샵 바깥 환경."
+    />
+  </Step>
+</StepGuide>
+
+## ✅ 오늘의 체크리스트
+
+<Checklist
+  lessonSlug="project-0-instagram-square"
+  items={[
+    { id: "canvas", text: "1080x1080 RGB 캔버스를 만들었다" },
+    { id: "import", text: "내 사진을 캔버스에 가져왔다" },
+    { id: "transform", text: "자유변형으로 비율을 지키며 크기를 맞췄다" },
+    { id: "save-psd", text: "원본을 PSD로 저장했다" },
+    { id: "save-jpg", text: "공유용으로 JPG도 따로 저장했다" },
+    { id: "verify", text: "포토샵 바깥에서 JPG가 제대로 보이는지 확인했다" },
+  ]}
+/>
+
+## 🧠 이해도 퀴즈
+
+<Quiz lessonSlug="project-0-instagram-square">
+  <Question
+    id="q1"
+    prompt="Q1. 가져온 사진이 캔버스보다 클 때 가장 먼저 떠올려야 하는 단축키는?"
+    options={[
+      { text: "Ctrl + S (저장)" },
+      { text: "Ctrl + T (자유변형)", correct: true },
+      { text: "Ctrl + 0 (화면 맞춤)" },
+      { text: "Ctrl + Z (취소)" },
+    ]}
+    explanation="크기 조절은 자유변형 Ctrl+T가 기본이에요. 모서리 핸들을 안쪽으로 당기면 돼요."
+  />
+  <Question
+    id="q2"
+    prompt="Q2. 오늘의 프로젝트에서 최종적으로 만들어야 하는 파일 두 개는?"
+    options={[
+      { text: "PSD와 JPG", correct: true },
+      { text: "PSD와 TIFF" },
+      { text: "JPG와 PNG" },
+      { text: "RAW와 JPG" },
+    ]}
+    explanation="PSD는 나중에 수정용 원본, JPG는 공유용. 작업 중엔 PSD, 배포는 JPG입니다."
+  />
+  <Question
+    id="q3"
+    prompt="Q3. 사진 비율이 찌그러졌을 때 가장 먼저 할 일은?"
+    options={[
+      { text: "저장하고 포토샵을 재시작" },
+      { text: "Ctrl+Z로 되돌리고 다시 시도", correct: true },
+      { text: "이미지 크기에서 숫자를 직접 입력" },
+      { text: "해상도를 바꿔본다" },
+    ]}
+    explanation="Ctrl+Z는 거의 모든 실수의 첫 해답이에요. 되돌린 뒤 Shift를 누르거나 핸들 방향을 점검해요."
+  />
+</Quiz>
+
+## 🎨 오늘의 실습
+
+**Level 0의 졸업 증거**예요. 꼭 업로드해주세요.
+
+- **시작 사진**: 원본 사진 그대로
+- **내 결과**: **my-first-square.jpg** 라는 이름으로 저장한
+  1080x1080 결과물
+
+<PracticeCompare
+  lessonSlug="project-0-instagram-square"
+  goal="원본 사진과 1080 정사각형으로 만든 결과물을 나란히 올려 오늘의 졸업작을 남기세요"
+  startHint="원본이 세로 또는 가로 비율이어도 괜찮아요. 자르거나 여백을 둬도 다 정답이에요."
+  checklist={[
+    "결과물이 정사각형이다",
+    "사진 비율이 찌그러지지 않았다",
+    "파일명이 영문/숫자로 되어 있다 (한글 파일명은 SNS 호환 문제)",
+  ]}
+/>
+
+## 🔑 꼭 기억할 단축키
+
+<KeyboardShortcut
+  keys={["Ctrl", "N"]}
+  mac={["Cmd", "N"]}
+  description="새 문서"
+/>
+<KeyboardShortcut
+  keys={["Ctrl", "T"]}
+  mac={["Cmd", "T"]}
+  description="자유변형"
+/>
+<KeyboardShortcut
+  keys={["Ctrl", "S"]}
+  mac={["Cmd", "S"]}
+  description="PSD 저장"
+/>
+<KeyboardShortcut
+  keys={["Ctrl", "Shift", "S"]}
+  mac={["Cmd", "Shift", "S"]}
+  description="JPG로 다른 이름 저장"
+/>
+
+## 😵 이게 안 돼요 (자주 묻는 문제)
+
+- **Q**: 사진이 너무 커서 핸들이 화면 밖으로 나가요.
+  **A**: **Ctrl+0** 으로 먼저 화면 맞춤을 한 뒤 자유변형하면
+  핸들이 다 보여요.
+
+- **Q**: 가로 사진을 정사각형에 넣으니 위아래가 허전해요.
+  **A**: 두 가지 방법. 1) 배경색을 사진 분위기에 맞는 색으로
+  칠하기. 2) 사진을 크게 키워 위아래를 자르기. 첫 실습이니
+  취향대로 해봐요.
+
+- **Q**: 실수로 레이어를 삭제했어요.
+  **A**: **Ctrl+Z** 로 바로 되살릴 수 있어요. 여러 단계 전이면
+  **히스토리 패널**에서 점프.
+
+- **Q**: 저장 후 인스타에서 화질이 나빠 보여요.
+  **A**: 품질을 **12** 로 한 번 더 뽑아보세요. 인스타는 업로드
+  시 한 번 더 압축해서 그래요.
+
+## 🧭 다음 레슨
+
+<NextLessonCard currentSlug="project-0-instagram-square" />

@@ -1,0 +1,615 @@
+[
+  {
+    "term": "캔버스",
+    "english": "Canvas",
+    "category": "basic",
+    "easyDefinition": "그림을 그릴 도화지예요. 포토샵에서 작업하는 흰색(또는 투명) 영역입니다.",
+    "formalDefinition": "이미지 편집이 이루어지는 작업 영역. 새 문서를 만들 때 크기와 해상도를 지정한다.",
+    "analogy": "실제 스케치북을 폈을 때 보이는 하얀 종이",
+    "relatedLessons": ["new-document", "interface-tour"]
+  },
+  {
+    "term": "픽셀",
+    "english": "Pixel",
+    "category": "basic",
+    "easyDefinition": "이미지를 이루는 아주 작은 네모 칸 하나예요. 모자이크 타일 한 개라고 생각하면 됩니다.",
+    "formalDefinition": "디지털 이미지를 구성하는 최소 단위. 색 정보 하나를 담는 사각형.",
+    "analogy": "모자이크 벽화의 타일 한 장",
+    "relatedLessons": ["what-is-photoshop", "new-document"]
+  },
+  {
+    "term": "해상도",
+    "english": "Resolution",
+    "category": "basic",
+    "easyDefinition": "이미지가 얼마나 촘촘한지예요. 타일이 촘촘할수록 선명해요.",
+    "formalDefinition": "단위 길이당 픽셀 수. 인쇄물은 300dpi, 웹용은 72dpi가 표준.",
+    "analogy": "모자이크 벽화를 만들 때 타일 크기. 작은 타일 많이 쓸수록 세밀한 그림.",
+    "relatedLessons": ["new-document", "export-for-print", "export-for-web"]
+  },
+  {
+    "term": "DPI",
+    "english": "Dots Per Inch",
+    "category": "basic",
+    "easyDefinition": "1인치(2.54cm) 안에 점이 몇 개 있는지 나타내는 숫자예요.",
+    "formalDefinition": "인쇄 해상도 단위. 높을수록 선명하지만 파일 크기 커짐.",
+    "relatedLessons": ["new-document", "export-for-print"]
+  },
+  {
+    "term": "래스터",
+    "english": "Raster",
+    "category": "basic",
+    "easyDefinition": "픽셀(네모 칸)로 이루어진 이미지예요. 사진, JPG가 래스터입니다.",
+    "formalDefinition": "픽셀 격자로 표현되는 이미지 방식. 확대 시 계단 현상 발생.",
+    "relatedLessons": ["what-is-photoshop", "pen-tool-straight"]
+  },
+  {
+    "term": "벡터",
+    "english": "Vector",
+    "category": "basic",
+    "easyDefinition": "점과 선으로 이루어진 그림이에요. 아무리 키워도 깨지지 않아요.",
+    "formalDefinition": "수학적 경로로 표현되는 이미지. 확대해도 품질 유지.",
+    "relatedLessons": ["pen-tool-straight", "vector-mask"]
+  },
+  {
+    "term": "RGB",
+    "english": "RGB",
+    "category": "color",
+    "easyDefinition": "빨강(R), 초록(G), 파랑(B) 세 가지 색을 섞어 모든 색을 만드는 방식이에요. 모니터에서 쓰는 색 방식.",
+    "formalDefinition": "가산 혼합 색 모델. 디지털 화면, 웹용 이미지의 표준.",
+    "relatedLessons": ["new-document", "color-space-print"]
+  },
+  {
+    "term": "CMYK",
+    "english": "CMYK",
+    "category": "color",
+    "easyDefinition": "인쇄할 때 쓰는 색 방식이에요. 청록, 자홍, 노랑, 검정 네 가지 잉크로 색을 만들어요.",
+    "formalDefinition": "감산 혼합 색 모델. 인쇄물의 표준 색 공간.",
+    "relatedLessons": ["color-space-print", "export-for-print"]
+  },
+  {
+    "term": "레이어",
+    "english": "Layer",
+    "category": "layer",
+    "easyDefinition": "투명한 셀로판지 여러 장을 겹친 것과 같아요. 각 장에 그림을 그리고 겹치면 합쳐져 보여요.",
+    "formalDefinition": "독립적으로 편집 가능한 이미지 층. 순서, 불투명도, 혼합 모드로 결과 제어.",
+    "analogy": "만화에서 배경, 인물, 말풍선을 각각 다른 투명 필름에 그린 것",
+    "relatedLessons": ["layer-concept", "layer-create-delete", "layer-order"]
+  },
+  {
+    "term": "레이어 그룹",
+    "english": "Layer Group",
+    "category": "layer",
+    "easyDefinition": "레이어들을 폴더 안에 모아놓은 거예요. 지저분한 레이어 패널을 정리할 때 씁니다.",
+    "formalDefinition": "여러 레이어를 묶어 단위로 이동/보임 제어가 가능한 컨테이너.",
+    "relatedLessons": ["layer-group"]
+  },
+  {
+    "term": "불투명도",
+    "english": "Opacity",
+    "category": "layer",
+    "easyDefinition": "레이어가 얼마나 투명한지 정하는 값이에요. 0%면 안 보이고, 100%면 완전히 보여요.",
+    "formalDefinition": "레이어 전체의 투명도. 레이어 스타일 포함.",
+    "relatedLessons": ["layer-opacity-fill"]
+  },
+  {
+    "term": "채우기",
+    "english": "Fill",
+    "category": "layer",
+    "easyDefinition": "레이어 내용물만 투명하게 하고, 효과(그림자 등)는 남겨두는 값이에요.",
+    "formalDefinition": "레이어 픽셀의 투명도. 레이어 스타일은 영향받지 않음.",
+    "relatedLessons": ["layer-opacity-fill", "layer-style-basics"]
+  },
+  {
+    "term": "혼합 모드",
+    "english": "Blend Mode",
+    "category": "effect",
+    "easyDefinition": "위 레이어가 아래 레이어와 어떻게 섞이는지 정하는 방식이에요.",
+    "formalDefinition": "두 레이어의 픽셀 값을 수학적으로 결합하는 알고리즘. Multiply, Screen, Overlay 등.",
+    "relatedLessons": ["blend-mode-basics", "blend-mode-overlay"]
+  },
+  {
+    "term": "레이어 마스크",
+    "english": "Layer Mask",
+    "category": "layer",
+    "easyDefinition": "종이에 창문을 뚫어 그 부분만 보이게 하는 것과 같아요. 검은색은 숨김, 흰색은 보임이에요.",
+    "formalDefinition": "레이어에 적용되는 8비트 흑백 알파 채널. 비파괴 방식으로 일부만 보이게 함.",
+    "analogy": "스텐실 종이",
+    "relatedLessons": ["layer-mask-intro", "mask-edit-deep"]
+  },
+  {
+    "term": "클리핑 마스크",
+    "english": "Clipping Mask",
+    "category": "layer",
+    "easyDefinition": "아래 레이어 모양으로 위 레이어를 잘라내는 거예요. 쿠키 틀로 반죽을 찍는 것과 같아요.",
+    "formalDefinition": "아래 레이어의 투명도를 기준으로 위 레이어가 보이게 하는 방식.",
+    "analogy": "쿠키 틀",
+    "relatedLessons": ["clipping-mask"]
+  },
+  {
+    "term": "벡터 마스크",
+    "english": "Vector Mask",
+    "category": "layer",
+    "easyDefinition": "펜 툴로 그린 깔끔한 경계로 레이어를 자르는 마스크예요.",
+    "formalDefinition": "벡터 패스를 이용한 마스크. 해상도 무관하게 선명.",
+    "relatedLessons": ["vector-mask"]
+  },
+  {
+    "term": "선택 영역",
+    "english": "Selection",
+    "category": "tool",
+    "easyDefinition": "작업하고 싶은 영역을 지정하는 거예요. 점선으로 표시돼요.",
+    "formalDefinition": "편집 작업이 적용될 픽셀 범위.",
+    "relatedLessons": ["selection-rect-oval", "selection-lasso", "selection-magic-wand"]
+  },
+  {
+    "term": "올가미",
+    "english": "Lasso",
+    "category": "tool",
+    "easyDefinition": "원하는 모양대로 자유롭게 그려 영역을 선택하는 도구예요.",
+    "formalDefinition": "자유 곡선으로 선택 영역을 만드는 도구. 다각형/자석 올가미 변형 존재.",
+    "relatedLessons": ["selection-lasso"]
+  },
+  {
+    "term": "마술봉",
+    "english": "Magic Wand",
+    "category": "tool",
+    "easyDefinition": "비슷한 색 영역을 한 번에 선택해주는 도구예요.",
+    "formalDefinition": "허용치(tolerance) 내 유사 색상 픽셀을 선택.",
+    "relatedLessons": ["selection-magic-wand"]
+  },
+  {
+    "term": "빠른 선택",
+    "english": "Quick Selection",
+    "category": "tool",
+    "easyDefinition": "브러시로 문지르듯 드래그하면 영역을 알아서 따내는 도구예요.",
+    "formalDefinition": "에지 감지 기반 선택 도구. 마술봉보다 영리함.",
+    "relatedLessons": ["selection-magic-wand"]
+  },
+  {
+    "term": "페더",
+    "english": "Feather",
+    "category": "tool",
+    "easyDefinition": "선택 영역의 가장자리를 부드럽게 흐리는 효과예요.",
+    "formalDefinition": "선택 경계에 페더 반경만큼 그라디언트 적용.",
+    "relatedLessons": ["selection-modify"]
+  },
+  {
+    "term": "펜 툴",
+    "english": "Pen Tool",
+    "category": "tool",
+    "easyDefinition": "점과 선으로 정교한 모양을 그리는 도구예요. 마스터하면 포토샵 고수가 됩니다.",
+    "formalDefinition": "베지어 곡선 기반 패스 생성 도구.",
+    "relatedLessons": ["pen-tool-straight", "pen-tool-curve", "pen-tool-practice"]
+  },
+  {
+    "term": "앵커 포인트",
+    "english": "Anchor Point",
+    "category": "tool",
+    "easyDefinition": "펜 툴로 찍은 점이에요. 이 점들이 이어져 선이나 곡선이 됩니다.",
+    "formalDefinition": "베지어 패스의 제어점.",
+    "relatedLessons": ["pen-tool-straight"]
+  },
+  {
+    "term": "핸들",
+    "english": "Handle",
+    "category": "tool",
+    "easyDefinition": "앵커 포인트에서 뻗어나오는 막대기예요. 곡선의 휨 정도를 조절해요.",
+    "formalDefinition": "베지어 곡선의 방향 제어점.",
+    "relatedLessons": ["pen-tool-curve"]
+  },
+  {
+    "term": "패스",
+    "english": "Path",
+    "category": "tool",
+    "easyDefinition": "펜 툴로 그린 선이에요. 눈에 보이지 않는 가상의 선으로, 선택 영역이나 모양으로 변환할 수 있어요.",
+    "formalDefinition": "앵커 포인트로 구성된 벡터 경로.",
+    "relatedLessons": ["pen-tool-straight", "pen-tool-practice"]
+  },
+  {
+    "term": "자유변형",
+    "english": "Free Transform",
+    "category": "tool",
+    "easyDefinition": "이미지의 크기, 회전, 기울기를 자유롭게 바꾸는 기능이에요. Ctrl+T예요.",
+    "formalDefinition": "선택 레이어/영역에 대해 scale, rotate, skew, distort, perspective 변형을 적용.",
+    "relatedLessons": ["free-transform"]
+  },
+  {
+    "term": "뒤틀기",
+    "english": "Warp",
+    "category": "tool",
+    "easyDefinition": "이미지를 고무찰흙처럼 구부리고 일그러뜨리는 기능이에요.",
+    "formalDefinition": "격자 기반 비선형 변형.",
+    "relatedLessons": ["warp-perspective"]
+  },
+  {
+    "term": "전경색",
+    "english": "Foreground Color",
+    "category": "color",
+    "easyDefinition": "지금 붓에 묻은 색이에요. 브러시나 페인트통으로 칠할 때 이 색이 나와요.",
+    "formalDefinition": "기본 도구가 사용하는 주 색상. 도구상자 하단 사각형 위쪽.",
+    "relatedLessons": ["foreground-background-color"]
+  },
+  {
+    "term": "배경색",
+    "english": "Background Color",
+    "category": "color",
+    "easyDefinition": "예비로 준비된 색이에요. 지우개로 배경 레이어를 지우면 이 색이 나와요.",
+    "formalDefinition": "보조 색상. 일부 도구와 필터가 사용.",
+    "relatedLessons": ["foreground-background-color"]
+  },
+  {
+    "term": "스포이드",
+    "english": "Eyedropper",
+    "category": "tool",
+    "easyDefinition": "이미지에서 원하는 색을 뽑아내 전경색으로 쓰는 도구예요.",
+    "formalDefinition": "캔버스의 픽셀 색상을 샘플링하는 도구.",
+    "relatedLessons": ["foreground-background-color"]
+  },
+  {
+    "term": "그라디언트",
+    "english": "Gradient",
+    "category": "color",
+    "easyDefinition": "색이 점점 바뀌는 효과예요. 노을처럼 빨강에서 주황으로 서서히 바뀌는 거죠.",
+    "formalDefinition": "두 개 이상의 색 사이의 점진적 전환.",
+    "relatedLessons": ["gradient-basics"]
+  },
+  {
+    "term": "색조",
+    "english": "Hue",
+    "category": "color",
+    "easyDefinition": "색의 종류예요. 빨강, 파랑, 노랑 같은.",
+    "formalDefinition": "HSB 색 공간의 H. 색상환에서의 각도(0-360).",
+    "relatedLessons": ["hue-saturation"]
+  },
+  {
+    "term": "채도",
+    "english": "Saturation",
+    "category": "color",
+    "easyDefinition": "색이 얼마나 진한지예요. 0이면 흑백, 100이면 제일 쨍한 색.",
+    "formalDefinition": "색의 순도. HSB의 S.",
+    "relatedLessons": ["hue-saturation"]
+  },
+  {
+    "term": "명도",
+    "english": "Brightness",
+    "category": "color",
+    "easyDefinition": "색이 얼마나 밝은지예요. 0은 검정, 100은 흰색.",
+    "formalDefinition": "색의 밝기. HSB의 B 또는 HSL의 L.",
+    "relatedLessons": ["hue-saturation", "levels-curves"]
+  },
+  {
+    "term": "조정 레이어",
+    "english": "Adjustment Layer",
+    "category": "effect",
+    "easyDefinition": "사진 위에 씌우는 색안경 같아요. 원본은 안 바뀌고 보기만 바뀌어요.",
+    "formalDefinition": "하위 레이어들에 비파괴적으로 적용되는 색/톤 보정 레이어.",
+    "relatedLessons": ["adjustment-layer-intro", "levels-curves"]
+  },
+  {
+    "term": "레벨",
+    "english": "Levels",
+    "category": "effect",
+    "easyDefinition": "그림자, 중간톤, 밝은 부분의 밝기를 조절하는 도구예요. 히스토그램을 보고 조절해요.",
+    "formalDefinition": "이미지의 톤 범위를 재매핑하는 기능.",
+    "relatedLessons": ["levels-curves"]
+  },
+  {
+    "term": "커브",
+    "english": "Curves",
+    "category": "effect",
+    "easyDefinition": "레벨보다 더 섬세하게 밝기를 조절하는 도구예요. 곡선 그래프로 제어해요.",
+    "formalDefinition": "입력 톤과 출력 톤의 관계를 곡선으로 제어.",
+    "relatedLessons": ["levels-curves"]
+  },
+  {
+    "term": "히스토그램",
+    "english": "Histogram",
+    "category": "effect",
+    "easyDefinition": "이미지에 밝은 픽셀과 어두운 픽셀이 얼마나 있는지 보여주는 막대 그래프예요.",
+    "formalDefinition": "픽셀 밝기 분포 시각화.",
+    "relatedLessons": ["levels-curves"]
+  },
+  {
+    "term": "레이어 스타일",
+    "english": "Layer Style",
+    "category": "effect",
+    "easyDefinition": "레이어에 그림자, 외곽선 같은 효과를 한번에 주는 기능이에요.",
+    "formalDefinition": "레이어에 적용되는 효과 모음. 드롭 섀도우, 스트로크, 광택 등.",
+    "relatedLessons": ["layer-style-basics", "layer-style-shadow-stroke"]
+  },
+  {
+    "term": "그림자 효과",
+    "english": "Drop Shadow",
+    "category": "effect",
+    "easyDefinition": "레이어 뒤에 그림자를 만드는 효과예요.",
+    "formalDefinition": "레이어 뒤쪽으로 드리워지는 그림자 효과.",
+    "relatedLessons": ["layer-style-shadow-stroke"]
+  },
+  {
+    "term": "외곽선",
+    "english": "Stroke",
+    "category": "effect",
+    "easyDefinition": "레이어 테두리에 선을 두르는 효과예요.",
+    "formalDefinition": "레이어 경계를 따라 적용되는 선.",
+    "relatedLessons": ["layer-style-shadow-stroke"]
+  },
+  {
+    "term": "닷지",
+    "english": "Dodge",
+    "category": "tool",
+    "easyDefinition": "문지르면 그 부분이 밝아지는 도구예요. 사진에서 얼굴 하이라이트 줄 때 써요.",
+    "formalDefinition": "선택 영역을 밝게 만드는 도구. 아날로그 암실의 dodging에서 유래.",
+    "relatedLessons": ["dodge-burn"]
+  },
+  {
+    "term": "번",
+    "english": "Burn",
+    "category": "tool",
+    "easyDefinition": "문지르면 그 부분이 어두워지는 도구예요. 그림자를 강조할 때 써요.",
+    "formalDefinition": "선택 영역을 어둡게 만드는 도구.",
+    "relatedLessons": ["dodge-burn"]
+  },
+  {
+    "term": "힐링 브러시",
+    "english": "Healing Brush",
+    "category": "tool",
+    "easyDefinition": "잡티를 주변 피부 느낌에 맞춰 지워주는 똑똑한 도구예요.",
+    "formalDefinition": "샘플 영역의 질감은 유지하면서 색/톤을 주변에 맞추는 복원 도구.",
+    "relatedLessons": ["skin-retouch-basics"]
+  },
+  {
+    "term": "복제 스탬프",
+    "english": "Clone Stamp",
+    "category": "tool",
+    "easyDefinition": "원하는 부분을 그대로 복사해서 다른 곳에 붙이는 도구예요.",
+    "formalDefinition": "샘플 픽셀을 다른 영역에 복제.",
+    "relatedLessons": ["skin-retouch-basics"]
+  },
+  {
+    "term": "스마트 오브젝트",
+    "english": "Smart Object",
+    "category": "advanced",
+    "easyDefinition": "원본 그림을 유리 액자에 넣어둔 것 같아요. 언제든 꺼내서 수정할 수 있어요.",
+    "formalDefinition": "원본 데이터를 보존하며 비파괴 편집을 가능하게 하는 레이어 형식.",
+    "relatedLessons": ["smart-object-intro", "smart-object-filter"]
+  },
+  {
+    "term": "스마트 필터",
+    "english": "Smart Filter",
+    "category": "advanced",
+    "easyDefinition": "스마트 오브젝트에 적용되는 필터예요. 나중에 강도를 바꾸거나 지울 수 있어요.",
+    "formalDefinition": "스마트 오브젝트에 비파괴적으로 적용되는 필터.",
+    "relatedLessons": ["smart-object-filter"]
+  },
+  {
+    "term": "채널",
+    "english": "Channel",
+    "category": "advanced",
+    "easyDefinition": "빨강/초록/파랑 색을 따로 분리한 것이에요. 정밀 합성에 써요.",
+    "formalDefinition": "색상 정보를 분리 저장하는 흑백 이미지. RGB 모드엔 R/G/B 채널.",
+    "relatedLessons": ["channel-mask"]
+  },
+  {
+    "term": "알파 채널",
+    "english": "Alpha Channel",
+    "category": "advanced",
+    "easyDefinition": "투명도 정보만 저장하는 채널이에요.",
+    "formalDefinition": "이미지의 불투명도 정보를 담은 흑백 채널.",
+    "relatedLessons": ["channel-mask"]
+  },
+  {
+    "term": "액션",
+    "english": "Action",
+    "category": "advanced",
+    "easyDefinition": "반복 작업을 녹화해놓고 버튼 하나로 재생하는 기능이에요.",
+    "formalDefinition": "일련의 편집 단계를 기록해 재실행 가능하게 만든 매크로.",
+    "relatedLessons": ["action-basics", "batch-process"]
+  },
+  {
+    "term": "배치 처리",
+    "english": "Batch Processing",
+    "category": "advanced",
+    "easyDefinition": "여러 파일에 같은 작업을 한 번에 적용하는 기능이에요. 100장 리사이즈 5초에 끝나요.",
+    "formalDefinition": "지정한 액션을 여러 파일에 일괄 적용.",
+    "relatedLessons": ["batch-process"]
+  },
+  {
+    "term": "목업",
+    "english": "Mockup",
+    "category": "advanced",
+    "easyDefinition": "디자인을 실제 제품에 입혀놓은 것처럼 보여주는 이미지예요. 앱 화면을 아이폰 사진 위에 얹는 거죠.",
+    "formalDefinition": "최종 디자인을 실제 매체/제품 컨텍스트에서 시각화한 이미지.",
+    "relatedLessons": ["mockup-basics", "mockup-create", "mockup-use"]
+  },
+  {
+    "term": "카메라 RAW",
+    "english": "Camera RAW",
+    "category": "advanced",
+    "easyDefinition": "디지털카메라의 원본 파일을 편집하는 포토샵 기능이에요. JPG보다 훨씬 세밀하게 조정할 수 있어요.",
+    "formalDefinition": "가공되지 않은 센서 데이터를 편집하는 Adobe의 RAW 처리 모듈.",
+    "relatedLessons": ["camera-raw-intro", "camera-raw-color"]
+  },
+  {
+    "term": "색 프로파일",
+    "english": "Color Profile",
+    "category": "advanced",
+    "easyDefinition": "이 이미지는 어떤 색 규칙으로 만들어졌는지 알려주는 꼬리표예요. sRGB, Adobe RGB 같은 것.",
+    "formalDefinition": "기기 간 색 재현 일관성을 위한 ICC 프로파일.",
+    "relatedLessons": ["color-space-print"]
+  },
+  {
+    "term": "Adobe Creative Cloud",
+    "english": "Adobe Creative Cloud",
+    "category": "basic",
+    "easyDefinition": "포토샵, 일러스트레이터 같은 어도비 프로그램을 한 계정으로 설치·업데이트·결제하는 허브 앱이에요.",
+    "formalDefinition": "Adobe의 구독형 크리에이티브 소프트웨어 관리 플랫폼. 설치 관리자, 라이선스 인증, 동기화 역할.",
+    "relatedLessons": ["install-photoshop"]
+  },
+  {
+    "term": "메뉴바",
+    "english": "Menu Bar",
+    "category": "basic",
+    "easyDefinition": "포토샵 창 맨 위의 '파일·편집·이미지' 같은 드롭다운이 늘어선 줄이에요.",
+    "formalDefinition": "애플리케이션 전역 명령에 접근하는 최상단 메뉴 모음.",
+    "analogy": "집의 현관 간판",
+    "relatedLessons": ["interface-tour"]
+  },
+  {
+    "term": "옵션바",
+    "english": "Options Bar",
+    "category": "basic",
+    "easyDefinition": "지금 선택한 도구의 세부 설정이 나오는 줄이에요. 도구를 바꾸면 내용도 바뀝니다.",
+    "formalDefinition": "현재 활성화된 도구의 매개변수를 표시·편집하는 컨텍스트 바.",
+    "relatedLessons": ["interface-tour"]
+  },
+  {
+    "term": "툴바",
+    "english": "Toolbar",
+    "category": "basic",
+    "easyDefinition": "왼쪽 세로 막대예요. 브러시, 지우개, 선택 도구 같은 작업 도구가 모여 있어요.",
+    "formalDefinition": "편집 도구들을 모아둔 수직 패널. 단축키 한 글자로도 접근.",
+    "analogy": "부엌 도구함",
+    "relatedLessons": ["interface-tour"]
+  },
+  {
+    "term": "패널",
+    "english": "Panel",
+    "category": "basic",
+    "easyDefinition": "오른쪽 영역의 '레이어·색상·속성' 같은 작은 창들이에요. 탭으로 묶여 있어요.",
+    "formalDefinition": "특정 기능(레이어, 색상, 히스토리 등) 전용 UI 창. 창(Window) 메뉴에서 토글.",
+    "analogy": "서랍장",
+    "relatedLessons": ["interface-tour"]
+  },
+  {
+    "term": "작업 영역",
+    "english": "Workspace",
+    "category": "basic",
+    "easyDefinition": "화면에 어떤 패널을 어디에 배치할지 한 세트로 저장한 프리셋이에요. '기본', '사진' 같은 이름으로 제공돼요.",
+    "formalDefinition": "패널·도구·메뉴 구성의 저장 가능한 레이아웃 프리셋.",
+    "relatedLessons": ["interface-tour"]
+  },
+  {
+    "term": "수정 키",
+    "english": "Modifier Key",
+    "category": "basic",
+    "easyDefinition": "다른 동작 위에 '같이 눌러서' 효과를 바꾸는 키예요. Shift·Alt·Ctrl이 대표적.",
+    "formalDefinition": "단독 입력 대신 다른 입력과 조합해 동작을 수정하는 키. OS별로 이름이 다름(Mac: Cmd/Option).",
+    "relatedLessons": ["mouse-keyboard-basics"]
+  },
+  {
+    "term": "프리셋",
+    "english": "Preset",
+    "category": "basic",
+    "easyDefinition": "미리 만들어둔 설정 묶음이에요. 새 문서 크기, 브러시, 그라디언트 등 다 프리셋이 있어요.",
+    "formalDefinition": "자주 쓰는 매개변수 조합을 저장해 한 번에 불러올 수 있게 한 설정 팩.",
+    "relatedLessons": ["new-document"]
+  },
+  {
+    "term": "가져오기",
+    "english": "Place Embedded",
+    "category": "basic",
+    "easyDefinition": "지금 작업 중인 캔버스 '위'에 사진을 새 레이어로 얹는 기능이에요.",
+    "formalDefinition": "외부 이미지를 현재 문서에 포함된 레이어로 삽입하는 동작. 연결(Linked) 방식과 구분.",
+    "analogy": "도화지 위에 스티커를 붙이는 것",
+    "relatedLessons": ["open-files"]
+  },
+  {
+    "term": "열기",
+    "english": "Open",
+    "category": "basic",
+    "easyDefinition": "사진 파일을 포토샵의 새 탭에 단독으로 불러오는 동작이에요.",
+    "formalDefinition": "파일을 새 문서 창으로 로드. 현재 문서에 얹히지 않음.",
+    "relatedLessons": ["open-files"]
+  },
+  {
+    "term": "PSD",
+    "english": "Photoshop Document",
+    "category": "basic",
+    "easyDefinition": "포토샵 고유 저장 형식이에요. 레이어·마스크·스타일이 그대로 보존돼서 '작업 원본'에 써요.",
+    "formalDefinition": "Adobe Photoshop의 네이티브 파일 포맷. 최대 2GB, 레이어·채널·패스·스마트 오브젝트를 보존.",
+    "analogy": "레고 블록을 하나하나 분리해 보관한 상자",
+    "relatedLessons": ["save-formats", "open-files"]
+  },
+  {
+    "term": "JPG",
+    "english": "JPEG",
+    "category": "basic",
+    "easyDefinition": "가장 흔한 사진 파일 형식이에요. 용량이 작고 호환성이 좋지만 투명 배경은 못 해요.",
+    "formalDefinition": "손실 압축 비트맵 이미지 포맷. 사진·웹 이미지 공유의 사실상 표준. 저장마다 품질 저하.",
+    "analogy": "조립 완성 작품을 사진으로 찍어둔 것",
+    "relatedLessons": ["save-formats", "open-files"]
+  },
+  {
+    "term": "PNG",
+    "english": "Portable Network Graphics",
+    "category": "basic",
+    "easyDefinition": "투명 배경을 지원하는 파일 형식이에요. 로고·아이콘·UI 요소에 적합해요.",
+    "formalDefinition": "무손실 압축 비트맵 포맷. 알파 채널 지원. PNG-8(팔레트)과 PNG-24(풀컬러) 구분.",
+    "analogy": "배경이 투명한 특수 사진",
+    "relatedLessons": ["save-formats", "open-files"]
+  },
+  {
+    "term": "돋보기 도구",
+    "english": "Zoom Tool",
+    "category": "tool",
+    "easyDefinition": "클릭한 곳을 중심으로 화면을 확대해주는 도구예요. 단축키 Z. Alt+클릭은 축소.",
+    "formalDefinition": "뷰포트 확대·축소 전용 도구. 드래그로 사각형 영역을 창에 꽉 차게 확대 가능.",
+    "relatedLessons": ["zoom-pan"]
+  },
+  {
+    "term": "손 도구",
+    "english": "Hand Tool",
+    "category": "tool",
+    "easyDefinition": "확대한 화면을 드래그로 밀어 이동하는 도구예요. 단축키 H. 스페이스바+드래그가 더 편해요.",
+    "formalDefinition": "캔버스 뷰를 패닝하는 도구. 스페이스바 누름 중에는 어떤 도구에서도 임시로 활성화.",
+    "relatedLessons": ["zoom-pan"]
+  },
+  {
+    "term": "확대율",
+    "english": "Zoom Level",
+    "category": "basic",
+    "easyDefinition": "지금 이미지를 몇 퍼센트로 보고 있는지 나타내는 숫자예요. 100%면 실제 크기.",
+    "formalDefinition": "픽셀 대 화면 비율. 상태 표시줄과 문서 탭에 표시.",
+    "relatedLessons": ["zoom-pan"]
+  },
+  {
+    "term": "실행취소",
+    "english": "Undo",
+    "category": "basic",
+    "easyDefinition": "방금 한 동작을 되돌리는 기능이에요. Ctrl+Z. 여러 번 누르면 계속 뒤로 가요.",
+    "formalDefinition": "직전 편집 동작을 역순으로 되돌리는 명령. 히스토리 스택에 기반.",
+    "relatedLessons": ["undo-history"]
+  },
+  {
+    "term": "히스토리 패널",
+    "english": "History Panel",
+    "category": "basic",
+    "easyDefinition": "내가 한 모든 동작이 시간순으로 쌓인 장부예요. 줄을 클릭하면 그 시점으로 점프.",
+    "formalDefinition": "편집 기록을 선형 스택으로 보여주는 패널. 기본 50단계, 환경설정에서 조정 가능.",
+    "relatedLessons": ["undo-history"]
+  },
+  {
+    "term": "스냅샷",
+    "english": "Snapshot",
+    "category": "basic",
+    "easyDefinition": "지금 상태를 '세이브 포인트'로 찍어두는 기능이에요. 히스토리 단계가 밀려나도 스냅샷은 남아요.",
+    "formalDefinition": "히스토리의 특정 상태를 별도 북마크로 저장. 세션 종료 시 함께 소멸.",
+    "relatedLessons": ["undo-history"]
+  },
+  {
+    "term": "웹용 저장",
+    "english": "Save for Web",
+    "category": "basic",
+    "easyDefinition": "웹·SNS용으로 가볍게 내보내는 저장 창이에요. 품질별 용량을 미리보기로 비교할 수 있어요.",
+    "formalDefinition": "레거시 Export 대화상자. 4분할 미리보기와 색 감산 옵션 제공. 최신에서는 Export As 권장.",
+    "relatedLessons": ["save-formats"]
+  },
+  {
+    "term": "품질",
+    "english": "Quality",
+    "category": "basic",
+    "easyDefinition": "JPG로 저장할 때 압축 정도를 정하는 값이에요. 12가 최고화질, 낮을수록 뭉개져요.",
+    "formalDefinition": "JPEG 손실 압축 비율 조절 파라미터. 1~12 또는 0~100 스케일.",
+    "relatedLessons": ["save-formats"]
+  }
+]

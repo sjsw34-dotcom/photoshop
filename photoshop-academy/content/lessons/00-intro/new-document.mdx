@@ -1,0 +1,264 @@
+---
+title: "새 문서 만들기 (도화지 준비하기)"
+level: 0
+order: 5
+duration: 50
+slug: "new-document"
+prerequisites: ["mouse-keyboard-basics"]
+objectives:
+  - "용도에 맞는 크기와 해상도로 새 문서를 만들 수 있다"
+  - "웹용 72ppi와 인쇄용 300ppi의 차이를 설명할 수 있다"
+  - "RGB와 CMYK를 언제 골라야 하는지 안다"
+keyTerms: ["해상도", "픽셀", "RGB", "CMYK", "프리셋"]
+practiceFile: null
+hasPractice: true
+---
+
+## 🎯 오늘의 목표
+
+포토샵에서 가장 자주 하는 일, **새 도화지 꺼내기**를 해볼 거예요.
+크기와 해상도를 처음 정하면 나중에 바꿀 때 손이 많이 가니
+시작부터 잘 정해요.
+
+## 🍎 일상 비유로 먼저 이해하기
+
+새 문서를 만드는 건 그림을 그리기 전에 도화지를 꺼내는 일이에요.
+미리 세 가지를 정해요.
+
+- **도화지 크기**: 얼마나 크게 그릴지 (폭 x 높이)
+- **도화지 촘촘함**: 얼마나 세밀하게 그릴지 (해상도)
+- **쓸 물감 종류**: 화면용 물감이냐 인쇄용 물감이냐 (색상 모드)
+
+세 번째가 낯설죠. 화면에서 볼 그림은 빛(빨강·초록·파랑)으로 섞고,
+종이에 찍을 그림은 잉크(청록·자홍·노랑·검정)로 섞어요. 포토샵은
+시작 때 이걸 골라놓으라고 해요.
+
+## 📖 핵심 개념
+
+### 폭과 높이, 단위
+
+새 문서 창에서 숫자 두 개를 넣어요. **폭(Width)** 과 **높이(Height)**.
+단위는 용도에 따라 달라요.
+
+- **픽셀(px)**: 웹, SNS, 모바일용. 화면에서 볼 때.
+- **밀리미터(mm)** 또는 **인치(in)**: 인쇄물. 종이에 찍을 때.
+
+### 해상도(Resolution)
+
+해상도는 **1인치 안에 픽셀이 몇 개 들어가는지**예요. 단위는
+**ppi(pixels per inch)** 또는 **dpi(dots per inch)**.
+
+- **72ppi**: 웹용. 화면에서는 이 이상 올려도 잘 안 보여요.
+- **300ppi**: 인쇄용. 종이에 찍을 땐 촘촘해야 깔끔해요.
+
+<Callout type="tip" title="해상도는 나중에 못 올려요">
+낮은 해상도로 만든 뒤 인쇄하려고 올리면 이미지가 깨져요.
+인쇄할 가능성이 조금이라도 있다면 처음부터 **300ppi** 로 시작해요.
+</Callout>
+
+### 색상 모드(Color Mode)
+
+- **RGB**: 빨강(R) 초록(G) 파랑(B). 빛으로 색을 만들어요.
+  **모든 화면**의 표준이에요.
+- **CMYK**: 청록(C) 자홍(M) 노랑(Y) 검정(K). 잉크로 색을 섞어요.
+  **인쇄물**의 표준이에요.
+
+<Callout type="warning" title="헷갈릴 땐 RGB">
+입문자는 거의 RGB만 써요. 인쇄물을 직접 만들 일이 있을 때만
+CMYK로 바꾸면 돼요.
+</Callout>
+
+### 프리셋(Preset)
+
+어도비가 미리 만들어둔 템플릿이에요. **사진**, **인쇄**, **모바일**,
+**웹** 탭에서 골라요. 프리셋을 고르면 크기·해상도·색상모드가
+한꺼번에 자동으로 채워져요.
+
+자주 쓰는 크기 몇 개만 알아둬요.
+
+| 용도 | 폭 x 높이 | 해상도 | 색상 |
+|---|---|---|---|
+| 인스타 정사각형 | 1080 x 1080 px | 72 | RGB |
+| 유튜브 썸네일 | 1280 x 720 px | 72 | RGB |
+| A4 인쇄 | 210 x 297 mm | 300 | CMYK |
+| 명함 | 90 x 50 mm | 300 | CMYK |
+
+### 배경 내용(Background Contents)
+
+처음 도화지 색깔이에요.
+
+- **흰색**: 일반 종이 느낌
+- **투명**: 뒤가 비치는 체크무늬. 로고나 아이콘에 적합
+- **배경색**: 툴바 하단에 설정된 배경색
+
+## 🖱️ 따라하기
+
+<StepGuide>
+  <Step number={1} title="새 문서 창을 엽니다">
+    **파일(File) > 새로 만들기(New)** 를 클릭해요. 단축키는
+    **Ctrl+N(Mac: Cmd+N)**.
+    <KeyboardShortcut
+      keys={["Ctrl", "N"]}
+      mac={["Cmd", "N"]}
+      description="새 문서 만들기"
+    />
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="파일 메뉴가 열리고 '새로 만들기' 항목이 하이라이트된 상태."
+    />
+  </Step>
+
+  <Step number={2} title="프리셋 탭을 둘러봅니다">
+    새 문서 창 상단의 **사진, 인쇄, 일러스트레이션, 모바일, 웹**
+    탭을 번갈아 눌러봐요. 탭마다 다른 사이즈 목록이 나와요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="새 문서 대화상자. 상단 탭에 '사진/인쇄/일러스트/모바일/웹'이 나열됨."
+    />
+  </Step>
+
+  <Step number={3} title="인스타그램용 크기를 골라봅니다">
+    오른쪽 **사전 설정 세부 정보** 패널에서 다음을 직접 입력해요.
+    폭 **1080 픽셀**, 높이 **1080 픽셀**, 해상도 **72 픽셀/인치**,
+    색상 모드 **RGB 색상 / 8bit**, 배경 내용 **흰색**.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="새 문서 설정 패널. 폭 1080, 높이 1080, 해상도 72, RGB 색상이 입력됨."
+    />
+  </Step>
+
+  <Step number={4} title="문서를 만듭니다">
+    오른쪽 아래 **만들기(Create)** 를 클릭하세요. 흰색 정사각형
+    캔버스가 화면 가운데 나타나요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="1080x1080 정사각형 흰색 캔버스가 포토샵 가운데에 열린 화면."
+    />
+  </Step>
+
+  <Step number={5} title="문서 정보를 확인합니다">
+    **이미지(Image) > 이미지 크기(Image Size)** 를 눌러 방금 만든
+    문서의 크기와 해상도가 맞게 들어갔는지 확인해요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="이미지 크기 대화상자. 폭/높이 1080픽셀, 해상도 72ppi가 표시됨."
+    />
+    <TroubleShoot>
+      숫자가 다르면 닫고 다시 만들어요. 이미 만든 문서의 해상도를
+      올리는 건 원하는 만큼 잘 안 돼요.
+    </TroubleShoot>
+  </Step>
+
+  <Step number={6} title="인쇄용 문서도 하나 만듭니다">
+    다시 Ctrl+N을 눌러 **A4 / 300ppi / CMYK** 문서를 만들어요.
+    웹용과 비교해보면 차이를 손으로 느낄 수 있어요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="새 문서 설정에 A4 210x297mm, 해상도 300, 색상모드 CMYK가 입력됨."
+    />
+  </Step>
+</StepGuide>
+
+## ✅ 오늘의 체크리스트
+
+<Checklist
+  lessonSlug="new-document"
+  items={[
+    { id: "open-new", text: "Ctrl+N으로 새 문서 창을 열었다" },
+    { id: "insta", text: "1080x1080 / 72ppi / RGB 문서를 만들었다" },
+    { id: "a4", text: "A4 / 300ppi / CMYK 문서도 만들어봤다" },
+    { id: "know-use", text: "웹용과 인쇄용을 언제 쓰는지 말할 수 있다" },
+  ]}
+/>
+
+## 🧠 이해도 퀴즈
+
+<Quiz lessonSlug="new-document">
+  <Question
+    id="q1"
+    prompt="Q1. 인스타그램에 올릴 정사각형 이미지에 가장 적절한 설정은?"
+    options={[
+      { text: "1080x1080 px / 72ppi / RGB", correct: true },
+      { text: "1080x1080 mm / 300ppi / CMYK" },
+      { text: "210x297 mm / 300ppi / CMYK" },
+      { text: "90x50 mm / 72ppi / RGB" },
+    ]}
+    explanation="SNS는 화면에서 보기 때문에 픽셀 단위, 72ppi, RGB가 기본이에요."
+  />
+  <Question
+    id="q2"
+    prompt="Q2. 해상도 300ppi가 필요한 상황은?"
+    options={[
+      { text: "스마트폰 배경화면" },
+      { text: "유튜브 썸네일" },
+      { text: "종이에 인쇄할 명함", correct: true },
+      { text: "PC 모니터 바탕화면" },
+    ]}
+    explanation="인쇄물은 종이 1인치 안에 점이 촘촘해야 깔끔해요. 화면용은 72ppi로 충분합니다."
+  />
+  <Question
+    id="q3"
+    prompt="Q3. 색상 모드를 CMYK로 골라야 하는 때는?"
+    options={[
+      { text: "화면에서 볼 이미지를 만들 때" },
+      { text: "투명 배경 로고를 만들 때" },
+      { text: "인쇄소에 보낼 파일을 만들 때", correct: true },
+      { text: "모바일 앱 아이콘을 만들 때" },
+    ]}
+    explanation="CMYK는 잉크 네 가지로 섞는 인쇄용 색 방식이에요. 화면용은 RGB입니다."
+  />
+</Quiz>
+
+## 🎨 오늘의 실습
+
+오늘 만든 두 도화지를 비교해봐요.
+
+- **시작 사진**: 새 문서 창에 설정을 입력한 스크린샷 (웹용 1080 기준)
+- **내 결과**: 포토샵에 **1080x1080 RGB**와 **A4 CMYK** 두 문서가
+  탭으로 나란히 열려 있는 스크린샷
+
+<PracticeCompare
+  lessonSlug="new-document"
+  goal="설정이 다른 두 문서를 동시에 열어 두 도화지의 차이를 눈으로 확인해보세요"
+  startHint="포토샵 상단 탭에 두 문서 이름이 나란히 보이게 찍으면 돼요."
+  checklist={[
+    "웹용 1080 정사각형 문서가 열려 있다",
+    "A4 세로형 문서가 열려 있다",
+    "두 문서의 제목 탭이 한 캡처에 같이 보인다",
+  ]}
+/>
+
+## 🔑 꼭 기억할 단축키
+
+<KeyboardShortcut
+  keys={["Ctrl", "N"]}
+  mac={["Cmd", "N"]}
+  description="새 문서"
+/>
+<KeyboardShortcut
+  keys={["Ctrl", "Alt", "I"]}
+  mac={["Cmd", "Option", "I"]}
+  description="이미지 크기 창 열기"
+/>
+
+## 😵 이게 안 돼요 (자주 묻는 문제)
+
+- **Q**: 인스타 세로형(스토리) 크기는 얼마예요?
+  **A**: **1080 x 1920 px**, 72ppi, RGB예요. 일반 피드(정사각형)는
+  **1080 x 1080 px**.
+
+- **Q**: 8bit, 16bit 선택지가 있어요. 어느 걸 골라요?
+  **A**: 입문자는 **8bit**. 색 정보가 많아도 일반 작업에는
+  차이가 거의 없고 파일이 무거워져요.
+
+- **Q**: 한번 만든 문서의 크기를 나중에 바꿀 수 있나요?
+  **A**: **이미지 > 캔버스 크기**로 종이 크기를 키우거나, **이미지
+  > 이미지 크기**로 이미지 자체를 리사이즈할 수 있어요.
+
+- **Q**: 프리셋에 내가 자주 쓰는 크기를 저장할 수 있나요?
+  **A**: 네. 설정 후 **사전 설정 저장** 버튼을 누르면 사용자
+  프리셋에 추가돼요.
+
+## 🧭 다음 레슨
+
+<NextLessonCard currentSlug="new-document" />
