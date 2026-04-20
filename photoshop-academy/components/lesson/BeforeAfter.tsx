@@ -70,7 +70,7 @@ export function BeforeAfter({
       >
         <Image
           src={beforeSrc}
-          alt={`${alt} — ${beforeLabel}`}
+          alt={`${alt} (${beforeLabel})`}
           fill
           sizes="(max-width: 768px) 100vw, 720px"
           className="object-cover"

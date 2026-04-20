@@ -3,10 +3,15 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ArrowRight, Calendar, Flame, Sparkles, Trophy } from "lucide-react";
+import { BadgeAwarder } from "@/components/progress/BadgeAwarder";
+import { BadgeGallery } from "@/components/progress/BadgeGallery";
 import { PracticeGallery, type GalleryLesson } from "@/components/progress/PracticeGallery";
 import { ProgressBar } from "@/components/progress/ProgressBar";
+import { WeeklyChart } from "@/components/progress/WeeklyChart";
 import { LEVELS, type LevelId } from "@/lib/constants";
 import { useProgress } from "@/lib/store";
+
+const EMPTY_BADGES: readonly string[] = Object.freeze([]);
 
 interface DashboardLesson {
   slug: string;
@@ -39,10 +44,10 @@ export function DashboardContent({ lessons, levels }: DashboardContentProps) {
   useEffect(() => setMounted(true), []);
 
   const streak = useProgress((s) => s.streak);
-  const totalMinutes = useProgress((s) => s.totalMinutes);
   const longestStreak = useProgress((s) => s.longestStreak);
   const lastLessonSlug = useProgress((s) => s.lastLessonSlug);
   const lessonsState = useProgress((s) => s.lessons);
+  const earnedBadges = useProgress((s) => s.earnedBadges ?? EMPTY_BADGES);
 
   const lessonBySlug = new Map(lessons.map((l) => [l.slug, l]));
 
@@ -101,6 +106,7 @@ export function DashboardContent({ lessons, levels }: DashboardContentProps) {
 
   return (
     <div className="mx-auto w-full max-w-5xl px-4 py-10 sm:px-6 sm:py-14">
+      <BadgeAwarder />
       <header className="mb-8 flex flex-wrap items-end justify-between gap-4">
         <div>
           <p className="text-sm font-semibold uppercase tracking-wider text-orange-500">
@@ -213,6 +219,10 @@ export function DashboardContent({ lessons, levels }: DashboardContentProps) {
           })}
         </div>
       </section>
+
+      <WeeklyChart mounted={mounted} />
+
+      <BadgeGallery earned={earnedBadges as string[]} mounted={mounted} />
 
       <PracticeGallery
         lessons={lessons

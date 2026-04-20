@@ -124,7 +124,7 @@ export function Quiz({ lessonSlug, passScore = 60, children }: QuizProps) {
               )}
             >
               {correctCount} / {total} 정답 · {score}점
-              {passed ? " — 통과!" : " — 한 번 더 도전해볼까요"}
+              {passed ? ", 통과!" : ", 한 번 더 도전해볼까요"}
             </span>
           ) : (
             <>

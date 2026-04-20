@@ -2,6 +2,7 @@ export const SITE = {
   title: "포토샵 아카데미",
   description: "하루 1시간, 기초부터 실무까지 포토샵을 익히는 학습 플랫폼",
   contactEmail: "hello@photoshop-academy.local",
+  url: "https://photoshop-academy.vercel.app",
 } as const;
 
 export type LevelId = 0 | 1 | 2 | 3;
@@ -25,4 +26,5 @@ export const NAV_LINKS = [
   { href: "/curriculum", label: "커리큘럼" },
   { href: "/dashboard", label: "내 진도" },
   { href: "/glossary", label: "용어 사전" },
+  { href: "/settings", label: "설정" },
 ] as const;

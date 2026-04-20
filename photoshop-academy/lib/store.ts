@@ -41,6 +41,19 @@ export interface LessonProgress {
   feedback: "up" | "down" | null;
 }
 
+export type ImportPayload = Pick<
+  ProgressState,
+  | "lessons"
+  | "streak"
+  | "lastStudyDate"
+  | "totalMinutes"
+  | "longestStreak"
+  | "currentLevel"
+  | "lastLessonSlug"
+  | "earnedBadges"
+  | "dailyMinutes"
+>;
+
 export interface ProgressState {
   lessons: Record<string, LessonProgress>;
   streak: number;
@@ -49,6 +62,8 @@ export interface ProgressState {
   longestStreak: number;
   currentLevel: LevelId;
   lastLessonSlug: string | null;
+  earnedBadges: string[];
+  dailyMinutes: Record<string, number>;
 
   initLesson: (slug: string) => void;
   markInProgress: (slug: string) => void;
@@ -68,6 +83,9 @@ export interface ProgressState {
   clearPractice: (slug: string) => void;
   deferPractice: (slug: string) => void;
   setFeedback: (slug: string, value: "up" | "down" | null) => void;
+  grantBadges: (ids: string[]) => void;
+  resetAll: () => void;
+  importState: (payload: ImportPayload) => void;
   isLessonUnlocked: (slug: string) => boolean;
 }
 
@@ -126,16 +144,22 @@ function withLesson(
   return { ...state.lessons, [slug]: updater(prev) };
 }
 
+const initialState: ImportPayload = {
+  lessons: {},
+  streak: 0,
+  lastStudyDate: null,
+  totalMinutes: 0,
+  longestStreak: 0,
+  currentLevel: 0,
+  lastLessonSlug: null,
+  earnedBadges: [],
+  dailyMinutes: {},
+};
+
 export const useProgress = create<ProgressState>()(
   persist(
     (set, get) => ({
-      lessons: {},
-      streak: 0,
-      lastStudyDate: null,
-      totalMinutes: 0,
-      longestStreak: 0,
-      currentLevel: 0,
-      lastLessonSlug: null,
+      ...initialState,
 
       initLesson: (slug) => {
         const { lessons } = get();
@@ -210,12 +234,17 @@ export const useProgress = create<ProgressState>()(
 
       addStudyTime: (slug, minutes) => {
         const state = get();
+        const today = todayStr();
         set({
           lessons: withLesson(state, slug, (prev) => ({
             ...prev,
             timeSpentMin: prev.timeSpentMin + minutes,
           })),
           totalMinutes: state.totalMinutes + minutes,
+          dailyMinutes: {
+            ...state.dailyMinutes,
+            [today]: (state.dailyMinutes[today] ?? 0) + minutes,
+          },
         });
       },
 
@@ -309,11 +338,44 @@ export const useProgress = create<ProgressState>()(
         });
       },
 
+      grantBadges: (ids) => {
+        if (ids.length === 0) return;
+        const state = get();
+        const existing = new Set(state.earnedBadges);
+        const next = [...state.earnedBadges];
+        for (const id of ids) {
+          if (!existing.has(id)) {
+            existing.add(id);
+            next.push(id);
+          }
+        }
+        if (next.length === state.earnedBadges.length) return;
+        set({ earnedBadges: next });
+      },
+
+      resetAll: () => {
+        set({ ...initialState });
+      },
+
+      importState: (payload) => {
+        set({
+          lessons: payload.lessons ?? {},
+          streak: payload.streak ?? 0,
+          lastStudyDate: payload.lastStudyDate ?? null,
+          totalMinutes: payload.totalMinutes ?? 0,
+          longestStreak: payload.longestStreak ?? 0,
+          currentLevel: payload.currentLevel ?? 0,
+          lastLessonSlug: payload.lastLessonSlug ?? null,
+          earnedBadges: payload.earnedBadges ?? [],
+          dailyMinutes: payload.dailyMinutes ?? {},
+        });
+      },
+
       isLessonUnlocked: () => true,
     }),
     {
       name: "photoshop-academy-progress",
-      version: 4,
+      version: 5,
       migrate: (persisted, version) => {
         const state = persisted as ProgressState | undefined;
         if (!state) return state;
@@ -326,7 +388,11 @@ export const useProgress = create<ProgressState>()(
               practice: { ...defaultPractice },
             };
           }
-          return { ...state, lessons };
+          state.lessons = lessons;
+        }
+        if (version < 5) {
+          state.earnedBadges = state.earnedBadges ?? [];
+          state.dailyMinutes = state.dailyMinutes ?? {};
         }
         return state;
       },

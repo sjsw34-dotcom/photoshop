@@ -17,10 +17,10 @@ export function Footer() {
             문의
           </a>
           <Link
-            href="/feedback"
+            href="/settings"
             className="transition-colors hover:text-orange-500"
           >
-            피드백 보내기
+            설정과 피드백
           </Link>
         </div>
       </div>

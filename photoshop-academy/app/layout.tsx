@@ -7,11 +7,24 @@ import { Footer } from "@/components/layout/Footer";
 import { SITE } from "@/lib/constants";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE.url),
   title: {
     default: SITE.title,
     template: `%s | ${SITE.title}`,
   },
   description: SITE.description,
+  openGraph: {
+    type: "website",
+    locale: "ko_KR",
+    title: SITE.title,
+    description: SITE.description,
+    siteName: SITE.title,
+  },
+  twitter: {
+    card: "summary",
+    title: SITE.title,
+    description: SITE.description,
+  },
 };
 
 export default function RootLayout({
