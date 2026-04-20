@@ -9,6 +9,7 @@ import {
   getPrevLesson,
 } from "@/lib/lessons";
 import { LEVELS } from "@/lib/constants";
+import { AiHelper } from "@/components/lesson/AiHelper";
 import { LessonFeedback } from "@/components/lesson/LessonFeedback";
 import { LessonProgressBar } from "@/components/lesson/LessonProgressBar";
 import { LessonTracker } from "@/components/lesson/LessonTracker";
@@ -161,6 +162,12 @@ export default async function LessonPage({ params }: LessonPageProps) {
       </article>
 
       <ScrollToTop />
+      <AiHelper
+        slug={lesson.slug}
+        title={lesson.title}
+        level={lesson.level}
+        objectives={lesson.objectives}
+      />
     </>
   );
 }
