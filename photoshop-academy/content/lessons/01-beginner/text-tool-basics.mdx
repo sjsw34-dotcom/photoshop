@@ -1,0 +1,251 @@
+---
+title: "텍스트 도구 기본"
+level: 1
+order: 32
+duration: 50
+slug: "text-tool-basics"
+prerequisites: ["mask-vs-eraser"]
+objectives:
+  - "텍스트 레이어를 만들고 글자를 입력할 수 있다"
+  - "폰트, 크기, 색상을 기본 UI로 바꿀 수 있다"
+  - "텍스트를 확정하고 다시 수정하는 방법을 안다"
+keyTerms: ["텍스트 레이어", "폰트", "확정"]
+practiceFile: null
+hasPractice: true
+---
+
+## 🎯 오늘의 목표
+
+포스터, 썸네일, 명함. 포토샵의 거의 모든 결과물에 **글자** 가 들어가요.
+오늘은 그 첫 글자를 캔버스에 올려봐요.
+
+## 🍎 일상 비유로 먼저 이해하기
+
+**스티커 북** 을 떠올려봐요. 원하는 글자 스티커를 골라서 종이에 붙이죠.
+포토샵의 텍스트 도구도 **글자 스티커를 붙이는 느낌** 이에요.
+한 번 붙인 뒤에도 언제든 떼어 **내용과 스타일을 바꿀 수 있어요.**
+
+## 📖 핵심 개념
+
+### 텍스트 도구(T)
+
+툴바의 **T 아이콘** 이에요. 단축키는 당연히 **T**.
+
+두 가지 입력 방식:
+
+- **포인트 텍스트(Point Text)**: 캔버스를 **한 번 클릭** 하고 타이핑.
+  줄바꿈은 Enter로 직접. 제목, 로고용에 적합.
+- **단락 텍스트(Paragraph Text)**: 캔버스에서 **사각형을 드래그** 해
+  박스를 만들고 그 안에 타이핑. 박스 크기에 맞춰 자동 줄바꿈. 긴 본문에 적합.
+
+### 텍스트 레이어
+
+글자를 입력하면 자동으로 **새 레이어** 가 생겨요. 레이어 패널에서
+썸네일이 **T** 로 표시돼요. 일반 픽셀 레이어와 달리 **벡터처럼 확대해도
+깨지지 않아요.**
+
+### 글꼴(Font), 크기, 색
+
+옵션 바 또는 **창(Window) > 문자(Character) 패널** 에서 바꿔요.
+
+- **폰트 이름**: 드롭다운 또는 직접 입력
+- **폰트 스타일**: Regular, Bold, Italic 등 굵기와 기울기
+- **크기(px)**: 글자 높이
+- **색상**: 클릭해서 색상 피커 열기
+
+### 확정과 수정
+
+글자를 입력한 뒤 **Enter 키(숫자패드) 또는 ✓ 버튼, Ctrl+Enter** 로 확정해요.
+메인 Enter 키는 줄바꿈이에요.
+
+수정하려면:
+
+- 텍스트 도구로 **기존 글자 위를 클릭** 해서 커서 넣기
+- 또는 레이어 패널에서 **텍스트 레이어 썸네일을 더블클릭**
+
+### 이동하며 입력하기
+
+입력 중 **Ctrl(Cmd)을 누른 채 드래그** 하면 확정 없이 위치를 옮길 수
+있어요. 자주 쓰는 꿀팁이에요.
+
+<Callout type="tip" title="포인트 텍스트와 단락 텍스트 바꾸기">
+실수로 잘못 만들어도 괜찮아요. **유형 > 포인트 텍스트로 변환 / 단락
+텍스트로 변환** 메뉴에서 서로 바꿀 수 있어요.
+</Callout>
+
+## 🖱️ 따라하기
+
+<StepGuide>
+  <Step number={1} title="새 문서를 만들어요">
+    **Ctrl+N** 으로 1920x1080 흰 캔버스를 준비해요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="1920x1080 흰 캔버스가 새로 열린 상태."
+    />
+  </Step>
+
+  <Step number={2} title="T로 텍스트 도구를 잡아요">
+    **T** 를 눌러 텍스트 도구를 선택해요. 캔버스의 한 지점을 한 번 클릭
+    하면 커서가 깜빡여요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="텍스트 도구가 선택되고 캔버스 가운데에 커서가 깜빡이는 상태."
+    />
+  </Step>
+
+  <Step number={3} title='"안녕 포토샵"을 입력해요'>
+    한국어로 **안녕 포토샵** 이라고 타이핑해요. 옵션 바의 폰트 크기가
+    너무 작으면 입력 후 숫자를 **120pt** 정도로 올려요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="캔버스에 '안녕 포토샵' 글자가 입력되고 텍스트 레이어가 레이어 패널에 생긴 모습."
+    />
+    <TroubleShoot>
+      한글이 네모(□□□)로 나오면 선택된 폰트가 한글을 지원하지 않아요.
+      **나눔 고딕**, **Pretendard**, **Noto Sans KR** 같은 한글 폰트로
+      바꿔요. 다음 레슨에서 자세히 해요.
+    </TroubleShoot>
+  </Step>
+
+  <Step number={4} title="확정해요">
+    **Ctrl+Enter** 를 눌러 입력을 마쳐요. 글자가 레이어로 자리잡고 자유
+    변형이 풀려요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="Ctrl+Enter로 확정된 텍스트 레이어와 선택 상태가 해제된 모습."
+    />
+  </Step>
+
+  <Step number={5} title="색을 바꿔요">
+    텍스트 도구로 글자를 **더블클릭** 하면 전체 글자가 선택돼요. 옵션 바의
+    **색상 견본** 을 클릭해 주황(F97316)으로 바꾸세요. 다시 **Ctrl+Enter**
+    로 확정.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="색이 주황으로 변경된 '안녕 포토샵' 텍스트."
+    />
+  </Step>
+
+  <Step number={6} title="단락 텍스트를 시험해요">
+    빈 곳을 **드래그** 해 직사각형 박스를 만들어요. 그 안에 한 문단
+    길이의 글을 타이핑하면 박스 폭에 맞춰 자동 줄바꿈이 돼요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="드래그로 만든 텍스트 박스 안에 여러 줄의 문단이 자동으로 줄바꿈된 모습."
+    />
+  </Step>
+
+  <Step number={7} title="이동하며 입력">
+    텍스트를 입력하는 중 **Ctrl(Cmd)을 누른 채 드래그** 로 글자 위치를
+    옮겨보세요. 확정하지 않은 채 위치 조정이 가능해요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="입력 중 Ctrl 드래그로 텍스트를 옮기고 있는 모습."
+    />
+  </Step>
+</StepGuide>
+
+## ✅ 오늘의 체크리스트
+
+<Checklist
+  lessonSlug="text-tool-basics"
+  items={[
+    { id: "point-text", text: "T를 눌러 포인트 텍스트로 한 줄 입력했다" },
+    { id: "confirm", text: "Ctrl+Enter로 확정해봤다" },
+    { id: "change-color", text: "텍스트 색을 원하는 색으로 바꿨다" },
+    { id: "paragraph", text: "드래그로 단락 텍스트 박스를 만들어 긴 글을 넣었다" },
+    { id: "ctrl-drag", text: "입력 중 Ctrl 드래그로 위치를 옮겨봤다" },
+  ]}
+/>
+
+## 🧠 이해도 퀴즈
+
+<Quiz lessonSlug="text-tool-basics">
+  <Question
+    id="q1"
+    prompt="Q1. 긴 문단 본문에 적합한 입력 방식은?"
+    options={[
+      { text: "포인트 텍스트" },
+      { text: "단락 텍스트", correct: true },
+      { text: "픽셀 브러시" },
+      { text: "그라디언트" },
+    ]}
+    explanation="단락 텍스트는 박스 폭에 맞춰 자동 줄바꿈이 돼요. 포인트 텍스트는 짧은 제목에 적합해요."
+  />
+  <Question
+    id="q2"
+    prompt="Q2. 텍스트 입력을 '확정'하는 올바른 조작은?"
+    options={[
+      { text: "Esc" },
+      { text: "메인 Enter 키" },
+      { text: "Ctrl+Enter 또는 숫자패드 Enter", correct: true },
+      { text: "Ctrl+Z" },
+    ]}
+    explanation="메인 Enter는 줄바꿈이 돼요. 확정은 Ctrl+Enter 또는 옵션 바의 ✓ 버튼이에요."
+  />
+  <Question
+    id="q3"
+    prompt="Q3. 한글이 네모(□)로 표시될 때 가장 먼저 할 일은?"
+    options={[
+      { text: "포토샵 재설치" },
+      { text: "폰트를 한글 지원 폰트로 변경", correct: true },
+      { text: "문서 색 모드를 바꾸기" },
+      { text: "해상도 높이기" },
+    ]}
+    explanation="네모는 해당 폰트에 그 글자가 없다는 표시예요. Pretendard, Noto Sans KR 등으로 바꿔요."
+  />
+</Quiz>
+
+## 🎨 오늘의 실습
+
+간단한 인용 카드 한 장을 만들어봐요.
+
+- **시작 사진**: 빈 1080x1080 캔버스
+- **내 결과**: 한글 한 문장(예: **"오늘도 한 걸음 나아가자"**)이 가운데에
+  큼직하게 놓이고 그 아래에 작은 이름(예: **"이름"**)이 적힌 카드.
+
+<PracticeCompare
+  lessonSlug="text-tool-basics"
+  goal="텍스트 도구만으로 한 문장 + 이름 구조의 인용 카드 한 장 완성하기"
+  startHint="폰트는 한글 지원 폰트 하나만 쓰고 크기/색으로 강약을 만들면 보기 좋아요."
+  checklist={[
+    "한글 문장이 네모(□) 없이 정상 표시된다",
+    "큰 문장과 작은 이름 두 줄의 크기 차이가 명확하다",
+    "캔버스 가운데에 균형 있게 놓여 있다",
+  ]}
+/>
+
+## 🔑 꼭 기억할 단축키
+
+<KeyboardShortcut
+  keys={["T"]}
+  description="텍스트 도구"
+/>
+<KeyboardShortcut
+  keys={["Ctrl", "Enter"]}
+  mac={["Cmd", "Return"]}
+  description="텍스트 확정"
+/>
+<KeyboardShortcut
+  keys={["Ctrl", "드래그"]}
+  mac={["Cmd", "드래그"]}
+  description="입력 중 텍스트 위치 이동"
+/>
+
+## 😵 이게 안 돼요 (자주 묻는 문제)
+
+- **Q**: 텍스트가 너무 작게 나와요.
+  **A**: 캔버스 크기에 비해 폰트 크기가 작은 값으로 기억되어 있어요.
+  선택 후 크기를 **80-150px** 로 올려요.
+
+- **Q**: 텍스트 레이어가 안 보이는데 레이어 패널엔 있어요.
+  **A**: 글자 **색이 흰색** 이고 캔버스가 **흰 배경** 이라 안 보일 수 있어요.
+  색을 어둡게 바꾸거나 배경을 어둡게 바꿔요.
+
+- **Q**: 입력 중 실수로 다른 도구를 눌렀어요.
+  **A**: 자동으로 텍스트가 **확정** 돼요. 다시 글자 위에서 T로 클릭하면
+  이어서 수정할 수 있어요.
+
+## 🧭 다음 레슨
+
+<NextLessonCard currentSlug="text-tool-basics" />

@@ -1,0 +1,258 @@
+---
+title: "페인트통과 색 채우기"
+level: 1
+order: 24
+duration: 45
+slug: "paint-bucket-fill"
+prerequisites: ["foreground-background-color"]
+objectives:
+  - "페인트통 도구로 영역을 색 한 방에 채울 수 있다"
+  - "편집 > 칠 대화상자로 다양한 채우기를 실행할 수 있다"
+  - "채우기 단축키를 외워 손에 익힐 수 있다"
+keyTerms: ["페인트통", "칠", "채우기", "내용 인식 채우기"]
+practiceFile: null
+hasPractice: true
+---
+
+## 🎯 오늘의 목표
+
+전경색을 정했으면 이제 **퍼부어 넣을 차례** 예요.
+페인트통 도구와 칠 대화상자, 그리고 단축키 세 개를 배워요.
+
+## 🍎 일상 비유로 먼저 이해하기
+
+벽에 큰 페인트 통을 쏟으면 비슷한 색 영역이 한 번에 칠해져요.
+포토샵의 **페인트통(Paint Bucket Tool)** 도 같아요. 누르면 **비슷한
+색끼리 이어진 영역** 이 한꺼번에 전경색으로 바뀌어요.
+
+더 정교하게 채우고 싶을 때는 **편집 > 칠(Fill)** 대화상자를 써요.
+색만 붓는 게 아니라 **패턴**, **내용 인식**, **검정/흰색** 등 다양한
+채우기 방식이 있어요.
+
+## 📖 핵심 개념
+
+### 페인트통 도구(G)
+
+툴바에서 **그래디언트/페인트통** 묶음에 있어요. **G** 를 눌러 고르고
+**Shift+G** 로 묶음 내에서 도구를 순환해요.
+
+클릭 한 방으로 비슷한 색 영역을 채워요. 핵심 옵션:
+
+- **허용치(Tolerance)**: 얼마나 다른 색까지 같이 칠할지. 기본 32.
+- **연속(Contiguous)**: 체크 시 이어진 부분만. 해제 시 캔버스 전체.
+- **앤티 앨리어스**: 경계를 부드럽게.
+
+### 편집 > 칠 (Shift+F5)
+
+**선택 영역** 이나 **레이어 전체** 를 한 번에 칠해요.
+
+- **내용**: 전경색, 배경색, 검정, 흰색, 50% 회색, 색상, 패턴, **내용 인식**, 히스토리
+- **혼합 모드**: 기존 픽셀과 섞는 방식 (Level 2에서 자세히)
+- **불투명도**: 얼마나 진하게
+
+### 내용 인식 채우기(Content-Aware Fill)
+
+포토샵이 주변 픽셀을 분석해 **배경처럼 자연스럽게 지워줘요.** 사진
+속 원치 않는 대상을 없앨 때 신기할 정도로 잘 돼요.
+
+사용법:
+1. 없앨 대상을 **올가미나 사각형** 으로 선택
+2. **Shift+F5** → **내용** 에서 **내용 인식** 선택
+3. 확인
+
+### 채우기 단축키 정리
+
+| 단축키 | 동작 |
+|---|---|
+| Alt+Backspace | 전경색 채우기 |
+| Ctrl+Backspace | 배경색 채우기 |
+| Shift+F5 | 칠 대화상자 열기 |
+| Shift+Alt+Backspace | 레이어의 **기존 픽셀만** 전경색 (투명 영역 보존) |
+| Shift+Ctrl+Backspace | 기존 픽셀만 배경색 |
+
+<Callout type="tip" title="투명 영역 보존 단축키 꼭 기억">
+텍스트나 아이콘 색만 바꾸고 싶을 때 **Shift+Alt+Backspace** 를 쓰면
+주변 투명 영역은 건드리지 않고 글자 색만 바뀌어요. 글자/아이콘 색
+바꾸는 가장 빠른 방법이에요.
+</Callout>
+
+## 🖱️ 따라하기
+
+<StepGuide>
+  <Step number={1} title="새 문서와 도형 하나를 준비해요">
+    1080x1080 흰 캔버스에 사각형 선택으로 영역을 만들고 전경색을
+    아무 색으로 바꿔 **Alt+Backspace** 로 채워요. 색 박스 하나가 생겼어요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="흰 배경 위에 색 사각형 하나가 만들어진 상태."
+    />
+  </Step>
+
+  <Step number={2} title="페인트통 도구(G)로 색을 바꿔요">
+    **G** 를 눌러 페인트통을 고른 뒤 전경색을 다른 색으로 바꾸고
+    사각형 안을 **한 번 클릭** 해요. 사각형 색이 새 전경색으로 바뀌어요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="페인트통으로 클릭해 사각형 색이 바뀐 모습."
+    />
+  </Step>
+
+  <Step number={3} title="허용치를 바꿔봐요">
+    옵션 바의 **허용치** 를 **100** 까지 올려요. 이제 페인트통 한 번에
+    **훨씬 넓은 색 범위** 가 한꺼번에 바뀌어요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="허용치 100에서 클릭 한 번에 더 넓은 영역이 한 번에 칠해진 모습."
+    />
+  </Step>
+
+  <Step number={4} title="사진 레이어를 얹어요">
+    사진 한 장을 **파일 > 포함 가져오기** 로 올리고 Enter로 확정해요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="캔버스 위에 사진 레이어가 얹힌 상태."
+    />
+  </Step>
+
+  <Step number={5} title="없애고 싶은 대상을 선택해요">
+    사진에서 없애고 싶은 작은 대상(표지판, 점, 불필요한 물체)을
+    **올가미(L)** 로 여유 있게 선택해요. 테두리 살짝 크게 잡으세요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="사진의 작은 물체 주변이 점선 올가미로 선택된 모습."
+    />
+  </Step>
+
+  <Step number={6} title="내용 인식 채우기로 지워요">
+    **Shift+F5** 를 눌러요. **내용** 드롭다운에서 **내용 인식** 을 골라
+    확인을 눌러요. 포토샵이 주변 픽셀로 그 자리를 메꿔요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="칠 대화상자에서 '내용 인식'을 선택하고 확인한 결과, 선택했던 물체가 사라지고 배경이 자연스럽게 채워진 모습."
+    />
+    <TroubleShoot>
+      결과가 어색하면 선택 영역을 **조금 다르게** 다시 잡고 시도해요.
+      넉넉하게 잡을 때 더 자연스러운 경우가 많아요.
+    </TroubleShoot>
+  </Step>
+
+  <Step number={7} title="기존 픽셀만 채우기 연습">
+    빈 레이어에 브러시로 검은 글자 하나를 적어요. 전경색을 빨강으로
+    바꾼 뒤 **Shift+Alt+Backspace** 를 눌러요. **글자만** 빨강이 되고
+    주변 투명은 그대로예요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="검은 글자가 Shift+Alt+Backspace로 빨간 글자로 바뀌고 배경은 여전히 투명한 모습."
+    />
+  </Step>
+</StepGuide>
+
+## ✅ 오늘의 체크리스트
+
+<Checklist
+  lessonSlug="paint-bucket-fill"
+  items={[
+    { id: "bucket-click", text: "페인트통으로 영역 하나를 한 번에 칠했다" },
+    { id: "tolerance", text: "허용치를 바꿔 결과가 달라지는 걸 확인했다" },
+    { id: "fill-dialog", text: "Shift+F5 칠 대화상자를 열어봤다" },
+    { id: "content-aware", text: "내용 인식 채우기로 사진 속 대상을 지웠다" },
+    { id: "preserve-transparency", text: "Shift+Alt+Backspace로 투명 영역을 보존한 채 색만 바꿨다" },
+  ]}
+/>
+
+## 🧠 이해도 퀴즈
+
+<Quiz lessonSlug="paint-bucket-fill">
+  <Question
+    id="q1"
+    prompt="Q1. 사진 속 원치 않는 대상을 자연스럽게 지우고 싶다면?"
+    options={[
+      { text: "페인트통으로 색을 덧바른다" },
+      { text: "Shift+F5 → 내용 인식", correct: true },
+      { text: "레이어를 삭제한다" },
+      { text: "파일을 새로 만든다" },
+    ]}
+    explanation="내용 인식 채우기는 주변 픽셀을 학습해 자연스럽게 메꿔요. 작은 점·물체 제거에 정말 유용해요."
+  />
+  <Question
+    id="q2"
+    prompt="Q2. 페인트통의 '허용치'를 크게 잡으면?"
+    options={[
+      { text: "더 좁은 영역만 칠해진다" },
+      { text: "더 넓은 색 범위까지 한 번에 칠해진다", correct: true },
+      { text: "색이 투명해진다" },
+      { text: "브러시 크기가 커진다" },
+    ]}
+    explanation="허용치는 '클릭 지점과 얼마나 비슷한 색까지 포함할지' 결정해요. 크면 범위가 넓어져요."
+  />
+  <Question
+    id="q3"
+    prompt="Q3. 투명 배경 위의 글자 색만 바꾸는 가장 빠른 단축키는?"
+    options={[
+      { text: "Ctrl+Backspace" },
+      { text: "Alt+Backspace" },
+      { text: "Shift+Alt+Backspace", correct: true },
+      { text: "Shift+F5" },
+    ]}
+    explanation="Shift를 더하면 투명 영역은 건드리지 않아요. 아이콘·글자 색 일괄 변경에 필수예요."
+  />
+</Quiz>
+
+## 🎨 오늘의 실습
+
+사진에서 거슬리는 점 하나를 지워봐요.
+
+- **시작 사진**: 바닥에 작은 돌·쓰레기, 벽의 얼룩, 하늘의 전봇대 등
+  거슬리는 요소가 있는 사진
+- **내 결과**: 같은 사진에서 그 요소가 **내용 인식 채우기** 로
+  깔끔하게 사라진 상태
+
+<PracticeCompare
+  lessonSlug="paint-bucket-fill"
+  goal="사진에서 거슬리는 작은 대상을 골라 내용 인식 채우기로 자연스럽게 제거하기"
+  startHint="제거 대상이 단순한 배경(하늘, 잔디, 벽) 위에 있을수록 결과가 깔끔해요."
+  checklist={[
+    "원본에서는 그 대상이 보인다",
+    "결과본에서는 그 자리가 주변 배경으로 자연스럽게 채워졌다",
+    "배경 질감(잔디결, 벽지 무늬 등)이 큰 얼룩 없이 이어진다",
+  ]}
+/>
+
+## 🔑 꼭 기억할 단축키
+
+<KeyboardShortcut
+  keys={["G"]}
+  description="페인트통/그래디언트 도구"
+/>
+<KeyboardShortcut
+  keys={["Shift", "F5"]}
+  description="칠 대화상자"
+/>
+<KeyboardShortcut
+  keys={["Alt", "Backspace"]}
+  mac={["Option", "Delete"]}
+  description="전경색 채우기"
+/>
+<KeyboardShortcut
+  keys={["Shift", "Alt", "Backspace"]}
+  mac={["Shift", "Option", "Delete"]}
+  description="기존 픽셀만 전경색 (투명 영역 보존)"
+/>
+
+## 😵 이게 안 돼요 (자주 묻는 문제)
+
+- **Q**: 페인트통을 눌러도 전체가 다 칠해져 버려요.
+  **A**: **허용치가 너무 크거나 연속이 꺼져 있을** 때 그래요. 허용치를
+  **20-40** 으로 내리고 **연속(Contiguous)** 을 체크해요.
+
+- **Q**: 내용 인식 채우기가 어색한 얼룩을 남겨요.
+  **A**: 포토샵 AI도 완벽하지 않아요. 더 넓게 선택하거나, 한 번에 안 되면
+  여러 번에 나눠 영역별로 시도해요. 마지막 다듬기는 **스탬프 도구** (Level 2)를 써요.
+
+- **Q**: Shift+F5를 눌렀는데 대화상자가 안 떠요.
+  **A**: 다른 창이 활성 상태일 수 있어요. 캔버스를 한 번 클릭해 포커스를
+  잡은 뒤 다시 눌러요. 입력 중인 텍스트 레이어가 있으면 먼저 확정해요.
+
+## 🧭 다음 레슨
+
+<NextLessonCard currentSlug="paint-bucket-fill" />

@@ -1,0 +1,237 @@
+---
+title: "레이어 만들기, 삭제하기, 복제하기"
+level: 1
+order: 12
+duration: 50
+slug: "layer-create-delete"
+prerequisites: ["layer-concept"]
+objectives:
+  - "빈 레이어와 복제 레이어를 원하는 방식으로 만들 수 있다"
+  - "필요 없는 레이어를 안전하게 삭제할 수 있다"
+  - "레이어에 이름을 붙이고 나중에 찾을 수 있게 정리할 수 있다"
+keyTerms: ["복제 레이어", "휴지통 아이콘", "레이어 이름"]
+practiceFile: null
+hasPractice: true
+---
+
+## 🎯 오늘의 목표
+
+어제 레이어가 뭔지 봤다면, 오늘은 **실제로 다루는 동작** 을 손에 익혀요.
+만들기, 지우기, 복제하기, 이 세 가지예요.
+
+## 🍎 일상 비유로 먼저 이해하기
+
+서랍 안의 투명 셀로판지 뭉치를 떠올려요. 새 그림을 그릴 때
+**새 셀로판지 한 장을 꺼내는 게 "만들기"**, 잘못 그린 셀로판지를
+**버리는 게 "삭제"**, 마음에 드는 그림을 **한 장 더 복사해서 위에
+얹는 게 "복제"** 예요.
+
+포토샵의 레이어도 똑같아요. 종이 뭉치가 아니라 패널 줄일 뿐이에요.
+
+## 📖 핵심 개념
+
+### 새 레이어 만들기 (빈 레이어)
+
+- **레이어 패널 하단의 + 아이콘** 클릭
+- 단축키 **Ctrl+Shift+N (Mac: Cmd+Shift+N)** (이름 입력 창이 같이 떠요)
+- 상단 메뉴 **레이어(Layer) > 새로 만들기(New) > 레이어(Layer)**
+
+빈 레이어는 썸네일이 **투명 체크무늬**예요. 아직 아무것도 없다는 뜻이에요.
+
+### 복제 레이어 만들기
+
+기존 레이어를 **그대로 한 벌 더 만드는** 방식이에요. 보정이나
+합성을 할 때 **원본을 안 건드리고** 복제본에만 손대려고 많이 써요.
+
+- 레이어 선택 후 **Ctrl+J (Mac: Cmd+J)**
+- 레이어를 패널 하단 **+ 아이콘에 드래그**
+- 우클릭 **레이어 복제(Duplicate Layer)**
+
+<Callout type="tip" title="Ctrl+J는 정말 자주 써요">
+원본을 남기고 복제본에 작업하는 습관은 **비파괴 편집(Non-Destructive)** 의
+시작이에요. 실수해도 복제본만 지우면 끝이에요.
+</Callout>
+
+### 레이어 삭제하기
+
+- 레이어 선택 후 **Delete 키**
+- 레이어를 패널 하단 **휴지통 아이콘에 드래그**
+- 우클릭 **레이어 삭제(Delete Layer)**
+
+<Callout type="warning" title="지운 건 Ctrl+Z로만 되돌려요">
+**삭제는 파일 저장 전까지만** 되돌릴 수 있어요. 저장 후 닫으면
+완전히 없어져요. 중요한 레이어는 지우기 전에 **숨기기(눈 아이콘)** 로
+한 번 가려보고 문제없는지 확인해요.
+</Callout>
+
+### 레이어 이름 바꾸기
+
+**레이어 이름을 더블클릭** 하면 바로 수정할 수 있어요.
+작업이 복잡해지면 "레이어 1, 레이어 2, 레이어 3"보다
+**"하늘", "사람", "로고"** 처럼 내용이 보이는 이름이 훨씬 찾기 쉬워요.
+
+## 🖱️ 따라하기
+
+<StepGuide>
+  <Step number={1} title="연습 문서를 엽니다">
+    본인 사진 아무거나 열어요. 배경 레이어가 한 줄 보일 거예요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="사진이 한 장 열리고 레이어 패널에 '배경'이라는 레이어 한 줄이 있는 화면."
+    />
+  </Step>
+
+  <Step number={2} title="빈 레이어를 한 장 추가해요">
+    레이어 패널 하단의 **+ 아이콘** 을 클릭해요. **레이어 1** 이
+    배경 위에 생겨요. 이름을 더블클릭해 **낙서** 로 바꿔줘요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="배경 위로 '낙서'라는 빈 레이어가 추가되고 파랗게 선택된 상태."
+    />
+  </Step>
+
+  <Step number={3} title="배경 레이어를 복제해요">
+    **배경** 레이어를 한 번 클릭해 선택해요. **Ctrl+J (Mac: Cmd+J)**
+    를 눌러요. **배경 복사** 라는 레이어가 하나 더 생겨요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="레이어 패널에 '배경', '배경 복사', '낙서' 순으로 세 줄이 보이는 상태."
+    />
+    <TroubleShoot>
+      Ctrl+J를 눌렀는데 반응이 없다면, 배경 레이어가 아니라 낙서 레이어가
+      선택되어 있을 수 있어요. 레이어 패널에서 배경을 다시 클릭해요.
+    </TroubleShoot>
+  </Step>
+
+  <Step number={4} title="복제 레이어 이름을 바꿉니다">
+    **배경 복사** 이름을 더블클릭해 **원본 백업** 이라고 바꿔요.
+    나중에 볼 때 "이게 뭐였지" 하지 않기 위함이에요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="'배경 복사' 이름이 '원본 백업'으로 수정된 상태."
+    />
+  </Step>
+
+  <Step number={5} title="낙서 레이어를 삭제해봐요">
+    **낙서** 레이어를 선택한 뒤 **Delete 키** 를 눌러요. 확인 창이 나오면
+    **예** 를 선택해요. 레이어 줄이 사라져요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="낙서 레이어가 삭제되어 '원본 백업'과 '배경' 두 줄만 남은 레이어 패널."
+    />
+  </Step>
+
+  <Step number={6} title="실수로 지웠다면 되돌려요">
+    **Ctrl+Z (Mac: Cmd+Z)** 를 한 번 눌러요. 삭제한 낙서 레이어가
+    다시 나타나요. 실수는 이렇게 안전하게 되돌릴 수 있어요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="Ctrl+Z로 삭제를 취소해 '낙서' 레이어가 복구된 상태."
+    />
+  </Step>
+</StepGuide>
+
+## ✅ 오늘의 체크리스트
+
+<Checklist
+  lessonSlug="layer-create-delete"
+  items={[
+    { id: "new-empty", text: "빈 레이어를 + 아이콘으로 추가했다" },
+    { id: "duplicate", text: "Ctrl+J로 기존 레이어를 복제했다" },
+    { id: "rename", text: "레이어 이름을 한글로 바꿔 저장했다" },
+    { id: "delete", text: "레이어를 삭제하고 Ctrl+Z로 되돌렸다" },
+  ]}
+/>
+
+## 🧠 이해도 퀴즈
+
+<Quiz lessonSlug="layer-create-delete">
+  <Question
+    id="q1"
+    prompt="Q1. 선택한 레이어를 그대로 한 벌 더 복제하는 단축키는?"
+    options={[
+      { text: "Ctrl+C" },
+      { text: "Ctrl+Shift+N" },
+      { text: "Ctrl+J", correct: true },
+      { text: "Ctrl+D" },
+    ]}
+    explanation="Ctrl+J는 선택한 레이어를 위에 한 장 더 복제해줘요. 비파괴 편집의 기본 동작이에요."
+  />
+  <Question
+    id="q2"
+    prompt="Q2. 레이어를 지웠는데 잘못 지운 걸 알았어요. 가장 먼저 할 일은?"
+    options={[
+      { text: "새 파일을 연다" },
+      { text: "Ctrl+Z로 되돌린다", correct: true },
+      { text: "포토샵을 재시작한다" },
+      { text: "레이어 패널을 닫았다가 연다" },
+    ]}
+    explanation="삭제 직후에는 Ctrl+Z 한 번으로 바로 복구돼요. 파일 저장 전까지는 되돌릴 수 있어요."
+  />
+  <Question
+    id="q3"
+    prompt="Q3. 원본을 안전하게 보존하면서 색 보정을 하고 싶을 때 권장되는 순서는?"
+    options={[
+      { text: "원본 레이어에 바로 보정을 한다" },
+      { text: "원본 레이어를 Ctrl+J로 복제한 뒤 복제본에서 보정한다", correct: true },
+      { text: "원본 레이어를 삭제하고 새로 만든다" },
+      { text: "레이어 이름만 바꾸고 그대로 보정한다" },
+    ]}
+    explanation="복제본에 작업하면 원본이 그대로 남아 언제든 처음으로 돌아올 수 있어요."
+  />
+</Quiz>
+
+## 🎨 오늘의 실습
+
+레이어 관리의 기본 흐름을 기록으로 남겨요.
+
+- **시작 사진**: 사진 한 장을 연 직후 레이어 패널 스크린샷
+- **내 결과**: 배경 복제본을 만들어 이름을 바꾼 뒤, 빈 레이어까지
+  하나 더 추가한 상태의 레이어 패널 스크린샷.
+
+<PracticeCompare
+  lessonSlug="layer-create-delete"
+  goal="레이어를 3개 (배경, 복제본, 빈 낙서 레이어)로 만든 뒤 각 레이어 이름을 의미 있게 바꾸기"
+  startHint="사진을 열 때 레이어 패널을 같이 보이게 캡처하면 '시작 사진'이 편해요."
+  checklist={[
+    "레이어 패널에 세 줄이 보인다",
+    "이름이 '레이어 1' 같은 기본값이 아니라 의미 있는 단어다",
+    "복제한 레이어의 썸네일이 배경과 같은 그림이다",
+  ]}
+/>
+
+## 🔑 꼭 기억할 단축키
+
+<KeyboardShortcut
+  keys={["Ctrl", "J"]}
+  mac={["Cmd", "J"]}
+  description="현재 레이어 복제"
+/>
+<KeyboardShortcut
+  keys={["Ctrl", "Shift", "N"]}
+  mac={["Cmd", "Shift", "N"]}
+  description="새 빈 레이어 (이름 창)"
+/>
+<KeyboardShortcut
+  keys={["Delete"]}
+  description="선택한 레이어 삭제"
+/>
+
+## 😵 이게 안 돼요 (자주 묻는 문제)
+
+- **Q**: 배경 레이어가 자물쇠로 잠겨 있어서 삭제가 안 돼요.
+  **A**: 자물쇠 아이콘을 한 번 클릭해 잠금을 풀면 삭제할 수 있어요.
+  단, 배경을 지우면 그 아래가 투명이 된다는 점을 기억해요.
+
+- **Q**: Ctrl+J를 눌러도 복제가 안 돼요.
+  **A**: 먼저 선택 영역(Ctrl+D로 해제)이나 다른 도구가 잡혀 있는지
+  확인해요. 레이어 패널에서 레이어를 한 번 더 클릭해 활성화한 뒤
+  다시 눌러봐요.
+
+- **Q**: 레이어 이름을 눌렀는데 이동이 돼요.
+  **A**: 이름 **텍스트** 부분을 정확히 **더블클릭** 해야 편집이 돼요.
+  썸네일이나 빈 공간을 더블클릭하면 다른 창이 떠요.
+
+## 🧭 다음 레슨
+
+<NextLessonCard currentSlug="layer-create-delete" />

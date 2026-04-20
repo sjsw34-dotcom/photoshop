@@ -1,0 +1,254 @@
+---
+title: "뒤틀기와 원근 변형"
+level: 1
+order: 22
+duration: 50
+slug: "warp-perspective"
+prerequisites: ["free-transform"]
+objectives:
+  - "왜곡, 기울기, 원근 변형의 차이를 예시로 설명할 수 있다"
+  - "뒤틀기(Warp)로 곡면에 사진을 맞출 수 있다"
+  - "원근 변형으로 기울어진 간판이나 종이를 똑바로 세울 수 있다"
+keyTerms: ["왜곡", "기울기", "원근 변형", "뒤틀기"]
+practiceFile: null
+hasPractice: true
+---
+
+## 🎯 오늘의 목표
+
+지난 레슨 자유변형은 **사각 프레임을 유지하며** 변형했어요.
+오늘은 프레임 자체를 **비틀고 굽히는** 변형을 배워요.
+
+## 🍎 일상 비유로 먼저 이해하기
+
+종이 한 장을 상상해보세요.
+
+- **왜곡(Distort)**: 네 귀를 각자 다른 방향으로 **잡아당기기**
+- **기울기(Skew)**: 평행사변형처럼 **옆으로 밀기**
+- **원근 변형(Perspective)**: **한 점으로 멀어지는 도로** 같은 효과
+- **뒤틀기(Warp)**: 종이를 **굽히거나 꼬기**
+
+목적이 다르니 하나씩 경험하면서 감을 잡아요.
+
+## 📖 핵심 개념
+
+### 네 가지 변형 메뉴
+
+**편집(Edit) > 변형(Transform)** 하위 메뉴에 전부 있어요.
+
+- **왜곡(Distort)**: 네 귀를 각자 자유롭게 이동
+- **기울기(Skew)**: 각 변 또는 귀를 한 방향으로만 밀기
+- **원근(Perspective)**: 양옆이 대칭으로 움직여 원근감 생성
+- **뒤틀기(Warp)**: 격자를 조정해 곡면으로 변형
+
+### 자유변형 중 수정 키로 빠르게 전환
+
+**Ctrl+T** 로 자유변형을 연 상태에서 **모서리를 드래그할 때**:
+
+- **Ctrl (Cmd)**: 왜곡
+- **Ctrl+Shift**: 기울기
+- **Ctrl+Alt+Shift (Cmd+Option+Shift)**: 원근
+
+이 단축키는 한 번 익히면 정말 빨라져요.
+
+### 뒤틀기(Warp)
+
+자유변형 중 옵션 바의 **뒤틀기 아이콘** 을 누르거나 **편집 > 변형
+> 뒤틀기** 를 선택해요. 격자가 나타나고 각 선과 제어점을 드래그해
+곡면을 만들어요.
+
+옵션 바의 드롭다운에서 **호(Arc), 깃발(Flag), 부풀림(Inflate)** 같은
+프리셋도 고를 수 있어요.
+
+### 원근 변형의 실전 쓰임
+
+길에서 찍은 간판이 기울어져 있을 때, 사진 속 종이가 비스듬할 때
+원근 변형으로 **정면에서 본 것처럼** 펴줘요. 인쇄물 스캔 보정에도
+많이 써요.
+
+<Callout type="tip" title="원래 사진을 복제해놓고 하세요">
+이런 변형은 되돌리기 어려울 수 있어요. 반드시 **Ctrl+J** 로 원본을
+백업한 뒤 복제본에 적용하세요.
+</Callout>
+
+## 🖱️ 따라하기
+
+<StepGuide>
+  <Step number={1} title="기울어진 간판 사진을 준비해요">
+    길거리에서 비스듬히 찍힌 간판, 책 표지, 벽보 같은 사진을 열어요.
+    **Ctrl+J** 로 복제본 레이어를 만들어 작업 레이어로 삼아요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="기울어진 간판이 찍힌 사진과 레이어 패널에 복제본 레이어가 추가된 상태."
+    />
+  </Step>
+
+  <Step number={2} title="자유변형을 켜요">
+    **Ctrl+T** 를 눌러 자유변형 프레임을 띄워요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="사진 주변에 자유변형 프레임이 생긴 상태."
+    />
+  </Step>
+
+  <Step number={3} title="Ctrl+Alt+Shift로 원근 변형을 적용해요">
+    **Ctrl+Alt+Shift (Mac: Cmd+Option+Shift)** 를 누른 채 아래 모서리
+    하나를 안쪽으로 드래그해요. 반대쪽 모서리가 대칭으로 함께 움직여요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="원근 변형으로 사진 아래쪽이 좁아지고 위쪽이 넓어진 모습."
+    />
+    <TroubleShoot>
+      한 쪽만 움직이면 **Ctrl** 만 누르고 있을 가능성이 커요. 그건 왜곡이에요.
+      세 키를 모두 꾹 눌러야 원근이 돼요.
+    </TroubleShoot>
+  </Step>
+
+  <Step number={4} title="간판이 정면처럼 보일 때까지 조정해요">
+    양쪽 아래 모서리를 번갈아 움직이며 간판이 **똑바로 서 있는** 모양이
+    되게 맞춰요. Enter로 확정해요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="기울어진 간판이 원근 변형 후 정면에서 본 듯한 직사각형 모양이 된 모습."
+    />
+  </Step>
+
+  <Step number={5} title="뒤틀기로 곡면 효과를 시험해요">
+    복제본을 **Ctrl+J** 로 또 하나 만들어요. **Ctrl+T** 를 켠 뒤 옵션 바의
+    **뒤틀기 아이콘** 을 클릭해 격자를 띄워요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="사진 위에 3x3 격자가 생기고 각 교차점에 제어점이 있는 뒤틀기 모드."
+    />
+  </Step>
+
+  <Step number={6} title="가운데 제어점을 위로 당겨봐요">
+    격자 가운데 제어점을 위로 드래그해요. 사진 가운데가 불룩하게
+    솟아오른 곡면이 돼요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="뒤틀기로 사진 가운데가 위로 불룩한 곡면이 된 모습."
+    />
+  </Step>
+
+  <Step number={7} title="프리셋 하나를 시험해봐요">
+    옵션 바 드롭다운에서 **호(Arc)** 를 골라요. 사진 전체가 호 모양으로
+    휘어요. 다른 프리셋도 몇 개 눌러봐요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="뒤틀기 프리셋 '호'가 적용되어 사진이 전체적으로 휘어진 모습."
+    />
+  </Step>
+</StepGuide>
+
+## ✅ 오늘의 체크리스트
+
+<Checklist
+  lessonSlug="warp-perspective"
+  items={[
+    { id: "duplicate-first", text: "원본 백업을 Ctrl+J로 만들고 작업했다" },
+    { id: "perspective", text: "원근 변형으로 기울어진 사진을 똑바로 세워봤다" },
+    { id: "distort-vs-skew", text: "왜곡과 기울기의 차이를 체감했다" },
+    { id: "warp-grid", text: "뒤틀기 격자로 곡면을 만들어봤다" },
+    { id: "warp-preset", text: "뒤틀기 프리셋(호, 깃발 등)을 시도했다" },
+  ]}
+/>
+
+## 🧠 이해도 퀴즈
+
+<Quiz lessonSlug="warp-perspective">
+  <Question
+    id="q1"
+    prompt="Q1. 양옆이 한 점으로 모이는 '길이 멀어지는' 효과는?"
+    options={[
+      { text: "왜곡(Distort)" },
+      { text: "기울기(Skew)" },
+      { text: "원근 변형(Perspective)", correct: true },
+      { text: "뒤틀기(Warp)" },
+    ]}
+    explanation="원근 변형은 대칭적으로 두 모서리를 움직여 거리감을 만들어요."
+  />
+  <Question
+    id="q2"
+    prompt="Q2. 사진을 '곡면'에 휘어붙이고 싶다면 어떤 기능을 쓰나요?"
+    options={[
+      { text: "자유변형만으로 충분하다" },
+      { text: "뒤틀기(Warp)", correct: true },
+      { text: "크기 조정" },
+      { text: "선택 반전" },
+    ]}
+    explanation="뒤틀기는 격자 제어로 각 지점을 휘어요. 머그컵, 책표지 합성 등에 자주 써요."
+  />
+  <Question
+    id="q3"
+    prompt="Q3. 변형 전에 가장 먼저 해야 할 안전 습관은?"
+    options={[
+      { text: "파일을 닫는다" },
+      { text: "Ctrl+J로 원본을 복제한다", correct: true },
+      { text: "레이어를 삭제한다" },
+      { text: "배경색을 바꾼다" },
+    ]}
+    explanation="원본을 복제한 뒤 복제본을 변형하면 실수해도 언제든 원본으로 돌아올 수 있어요."
+  />
+</Quiz>
+
+## 🎨 오늘의 실습
+
+기울어진 사각형 피사체를 원근 변형으로 펴봐요.
+
+- **시작 사진**: 기울어진 간판, 책표지, 명함, 벽보 등 사각형 피사체
+- **내 결과**: 같은 피사체가 정면에서 본 것처럼 반듯해진 레이어.
+  원본은 눈을 꺼서 남겨 놓아요.
+
+<PracticeCompare
+  lessonSlug="warp-perspective"
+  goal="기울어진 사각형 피사체를 원근 변형으로 반듯하게 펴서 '정면 촬영 사진'처럼 만들기"
+  startHint="피사체 네 모서리가 모두 보이는 구도의 사진이 작업하기 쉬워요."
+  checklist={[
+    "피사체 네 변이 직사각형에 가까워졌다",
+    "캔버스 여백에 원본과 변형본이 한 화면에 보인다",
+    "원본 레이어가 지워지지 않고 남아 있다",
+  ]}
+/>
+
+## 🔑 꼭 기억할 단축키
+
+<KeyboardShortcut
+  keys={["Ctrl", "T"]}
+  mac={["Cmd", "T"]}
+  description="자유변형"
+/>
+<KeyboardShortcut
+  keys={["Ctrl", "드래그"]}
+  mac={["Cmd", "드래그"]}
+  description="왜곡 (자유변형 중)"
+/>
+<KeyboardShortcut
+  keys={["Ctrl", "Shift", "드래그"]}
+  mac={["Cmd", "Shift", "드래그"]}
+  description="기울기"
+/>
+<KeyboardShortcut
+  keys={["Ctrl", "Alt", "Shift", "드래그"]}
+  mac={["Cmd", "Option", "Shift", "드래그"]}
+  description="원근 변형"
+/>
+
+## 😵 이게 안 돼요 (자주 묻는 문제)
+
+- **Q**: 원근 변형을 적용했는데 사진이 많이 뿌옇게 변했어요.
+  **A**: 래스터 레이어를 계속 변형하면 디테일이 뭉개져요. 반복 변형이
+  필요할 것 같으면 Level 2에서 배울 **스마트 오브젝트** 로 먼저 바꾸면
+  좋아요.
+
+- **Q**: 뒤틀기 격자가 너무 투박해요.
+  **A**: 옵션 바에서 격자 밀도를 **5x5**, **변형 사용자 정의** 로 올릴 수
+  있어요. 세밀한 곡면이 필요하면 이 옵션을 늘려요.
+
+- **Q**: 변형 중 사진 외곽에 회색 테두리가 보여요.
+  **A**: 변형한 레이어 바깥은 **투명 영역** 이에요. 체크무늬가 회색으로
+  보이는 것뿐이고 실제로는 비어 있어요. 뒤에 다른 레이어를 깔면 가려져요.
+
+## 🧭 다음 레슨
+
+<NextLessonCard currentSlug="warp-perspective" />

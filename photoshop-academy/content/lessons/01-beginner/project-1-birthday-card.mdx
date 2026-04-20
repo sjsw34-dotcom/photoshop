@@ -1,0 +1,275 @@
+---
+title: "[실습] 친구 생일 축하 카드 만들기"
+level: 1
+order: 35
+duration: 75
+slug: "project-1-birthday-card"
+prerequisites: ["text-styling"]
+objectives:
+  - "Level 1에서 배운 레이어/선택/브러시/마스크/텍스트를 한 작업에 엮을 수 있다"
+  - "사진, 도형, 텍스트를 조합해 완성도 있는 카드 한 장을 만든다"
+  - "완성본을 PNG로 내보내고 공유할 수 있다"
+keyTerms: ["합성", "레이아웃", "내보내기"]
+practiceFile: null
+hasPractice: true
+---
+
+## 🎯 오늘의 목표
+
+**친구 생일 축하 카드** 한 장을 처음부터 끝까지 본인 손으로 완성해요.
+이 프로젝트를 성공하면 Level 2로 올라갈 준비가 된 거예요.
+
+## 🍎 일상 비유로 먼저 이해하기
+
+지금까지 배운 기술은 **요리 재료** 였어요. 레이어는 접시, 선택 영역은 칼,
+브러시는 숟가락, 마스크는 체, 텍스트는 소금과 후추. 오늘은 이 재료로
+**한 접시의 요리** 를 만들어요. 생일 축하 카드예요.
+
+## 📖 오늘의 준비물
+
+- 친구가 실린 사진 **1-2장** (본인과 함께 찍은 것이 제일 좋음)
+- 축하하고 싶은 한 줄 문장 (예: **"생일 축하해 민수야"**)
+- 한 시간 정도의 집중 시간
+
+## 📖 결과물 스펙
+
+- **크기**: 1080x1080 (인스타그램 정사각형)
+- **해상도**: 72ppi / RGB
+- **구성 요소 (최소)**:
+  1. 배경 (단색 또는 그라디언트)
+  2. 친구 사진 (마스크로 배경 분리)
+  3. 이름과 축하 문구 (2줄)
+  4. 장식 요소 1개 이상 (도형, 빛망울, 이모지 등)
+
+## 🖱️ 따라하기
+
+<StepGuide>
+  <Step number={1} title="새 문서를 만들어요">
+    **Ctrl+N** 으로 1080x1080 / 72ppi / RGB 문서를 만들어요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="1080x1080 정사각형 새 문서가 열린 상태."
+    />
+  </Step>
+
+  <Step number={2} title="배경 그라디언트를 깔아요">
+    배경 레이어를 복제하거나 빈 레이어를 추가해요. **그라디언트(G)** 로
+    따뜻한 2-3색 그라디언트를 캔버스 전체에 적용해요. 생일 느낌의
+    밝은 톤이 좋아요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="따뜻한 그라디언트가 배경 전체에 깔린 캔버스."
+    />
+  </Step>
+
+  <Step number={3} title="친구 사진을 얹어요">
+    **파일(File) > 포함 가져오기(Place Embedded)** 로 친구 사진을 불러와요.
+    자유변형(Ctrl+T)으로 적당한 크기로 맞추고 Enter로 확정.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="친구 사진 레이어가 배경 그라디언트 위에 배치된 모습."
+    />
+    <TroubleShoot>
+      사진이 너무 크거나 작으면 자유변형 모서리로 비율 유지한 채 조절해요.
+      원본을 **Ctrl+J** 로 백업한 뒤 작업하면 안전해요.
+    </TroubleShoot>
+  </Step>
+
+  <Step number={4} title="마스크로 배경을 분리해요">
+    사진 레이어에 **레이어 마스크** 를 추가해요. **빠른 선택(W)** 으로 친구를
+    먼저 대강 선택한 뒤, 마스크 썸네일에 **검정 브러시** 로 가릴 부분을 칠해요.
+    경도 0 부드러운 브러시를 섞어 자연스럽게.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="친구 주변 배경이 마스크로 가려지고 그라디언트가 비치는 모습."
+    />
+  </Step>
+
+  <Step number={5} title="축하 문구를 적어요">
+    **T** 로 텍스트 도구. 한글 폰트(Pretendard 등)로 두 줄을 입력해요.
+    예: **"Happy Birthday"** + **"민수야 🎂"** (또는 원하는 이름).
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="캔버스 상단에 두 줄의 생일 축하 문구가 추가된 모습."
+    />
+  </Step>
+
+  <Step number={6} title="자간과 행간을 다듬어요">
+    문자 패널을 열어 자간을 살짝 좁히고 행간을 맞춰요. 두 줄이 한 덩어리로
+    보이게, 캔버스 한쪽에 여유가 있게 배치해요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="자간과 행간이 다듬어져 깔끔해진 텍스트 블록."
+    />
+  </Step>
+
+  <Step number={7} title="장식 요소 하나를 얹어요">
+    새 레이어에 부드러운 큰 브러시(경도 0, 불투명도 50%)로 **빛망울** 을
+    흰색으로 클릭 몇 번. 또는 색 도형 하나를 더해 시선을 유도하는 액센트를
+    만들어요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="흰 빛망울 장식이 추가되어 카드가 더 풍성해진 모습."
+    />
+  </Step>
+
+  <Step number={8} title="레이어 정리해요">
+    비슷한 레이어끼리 **Ctrl+G** 로 그룹을 묶어요. 예: **배경**, **인물**,
+    **텍스트**, **장식**. 레이어 패널이 한눈에 정리돼요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="레이어들이 네 그룹으로 정리된 깔끔한 레이어 패널."
+    />
+  </Step>
+
+  <Step number={9} title="저장과 내보내기">
+    **Ctrl+S** 로 .psd 원본 저장. 그다음 **파일 > 내보내기 > PNG로
+    내보내기** 로 `birthday-card.png` 파일을 만들어요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="파일 내보내기 메뉴에서 PNG로 저장하는 대화상자."
+    />
+  </Step>
+</StepGuide>
+
+## ✅ 오늘의 체크리스트
+
+<Checklist
+  lessonSlug="project-1-birthday-card"
+  items={[
+    { id: "doc-setup", text: "1080x1080 RGB 72ppi 문서를 만들었다" },
+    { id: "background", text: "단색 또는 그라디언트 배경을 깔았다" },
+    { id: "photo-mask", text: "친구 사진을 얹고 마스크로 배경을 분리했다" },
+    { id: "text", text: "한글 폰트로 2줄 축하 문구를 작성했다" },
+    { id: "typography", text: "자간/행간/정렬을 한 번 이상 조정했다" },
+    { id: "accent", text: "장식 요소(빛망울/도형 등)를 하나 이상 추가했다" },
+    { id: "groups", text: "레이어를 의미 있는 그룹으로 정리했다" },
+    { id: "export", text: "PSD 저장 + PNG 내보내기까지 마쳤다" },
+  ]}
+/>
+
+## 🧠 이해도 퀴즈
+
+<Quiz lessonSlug="project-1-birthday-card">
+  <Question
+    id="q1"
+    prompt="Q1. 친구 사진의 배경만 지우고 원본은 건드리지 않는 가장 안전한 방법은?"
+    options={[
+      { text: "배경 레이어를 지우개로 지운다" },
+      { text: "사진 레이어에 마스크를 추가해 가릴 부분을 검정으로 칠한다", correct: true },
+      { text: "사진 레이어를 삭제한다" },
+      { text: "배경색으로 덮는다" },
+    ]}
+    explanation="마스크는 원본 픽셀을 보존하면서 가려요. 오늘의 프로젝트에서 가장 중요한 기술이에요."
+  />
+  <Question
+    id="q2"
+    prompt="Q2. PSD 파일과 PNG 파일의 차이는?"
+    options={[
+      { text: "둘 다 같다" },
+      { text: "PSD는 레이어가 보존되는 원본, PNG는 최종 납품용 평평한 이미지", correct: true },
+      { text: "PNG가 더 고급이다" },
+      { text: "PSD는 인쇄 전용이다" },
+    ]}
+    explanation="PSD는 편집 정보가 다 남는 포토샵 원본 형식, PNG는 웹·SNS 공유용 결과 파일이에요."
+  />
+  <Question
+    id="q3"
+    prompt="Q3. 레이어가 많아졌을 때 효율적으로 관리하는 방법은?"
+    options={[
+      { text: "모든 레이어를 하나로 병합한다" },
+      { text: "의미 있는 이름으로 바꾸고 그룹으로 묶는다", correct: true },
+      { text: "화면 밖으로 숨긴다" },
+      { text: "그대로 둔다" },
+    ]}
+    explanation="이름 + 그룹이 관리의 기본이에요. 6개월 뒤 본인이 다시 열어도 이해할 수 있게 만들어요."
+  />
+</Quiz>
+
+## 🎨 오늘의 실습
+
+오늘 작업이 바로 실습이에요. 결과물을 갤러리에 올려 **Level 1 졸업** 을
+기념해요.
+
+- **시작 사진**: 친구 사진 원본 한 장 (재료)
+- **내 결과**: 완성된 생일 축하 카드 PNG (1080x1080)
+
+<PracticeCompare
+  lessonSlug="project-1-birthday-card"
+  goal="친구 사진을 재료로 그라디언트 배경 + 마스크 + 축하 문구 + 장식이 모두 들어간 완성형 생일 카드 한 장 만들기"
+  startHint="레이어 그룹을 꼭 나누고 저장하세요. 나중에 수정 요청이 오면 큰 차이가 나요."
+  checklist={[
+    "배경에 그라디언트 또는 의도된 색이 깔려 있다",
+    "친구 사진이 원본 배경 없이 자연스럽게 배치돼 있다",
+    "축하 문구가 한글로 깔끔히 보인다",
+    "장식 요소(빛망울/도형 등)가 최소 하나 있다",
+    "PNG 파일로 내보냈다",
+  ]}
+/>
+
+## 🎉 축하합니다: Level 1 완주
+
+Level 0에서는 포토샵과 인사했고, Level 1에서는 **포토샵을 다루는 기초**
+를 전부 경험했어요.
+
+앞으로 Level 2에서는 **마스크 심화, 조정 레이어, 혼합 모드, 인물 보정,
+스마트 오브젝트** 같은 **실무에서 매일 쓰는 기술** 을 배워요. 오늘의
+생일 카드가 **나의 포토샵 여정의 첫 결과물** 이에요. 갤러리에 올리고,
+1년 뒤에 다시 열어보면 실력이 얼마나 는 지 바로 보일 거예요.
+
+## 🔑 이번 프로젝트에서 쓴 단축키 모음
+
+<KeyboardShortcut
+  keys={["Ctrl", "N"]}
+  mac={["Cmd", "N"]}
+  description="새 문서"
+/>
+<KeyboardShortcut
+  keys={["Ctrl", "J"]}
+  mac={["Cmd", "J"]}
+  description="레이어 복제"
+/>
+<KeyboardShortcut
+  keys={["G"]}
+  description="그라디언트 / 페인트통"
+/>
+<KeyboardShortcut
+  keys={["W"]}
+  description="빠른 선택"
+/>
+<KeyboardShortcut
+  keys={["D"]}
+  description="검정/흰색 리셋 (마스크 작업)"
+/>
+<KeyboardShortcut
+  keys={["T"]}
+  description="텍스트 도구"
+/>
+<KeyboardShortcut
+  keys={["Ctrl", "G"]}
+  mac={["Cmd", "G"]}
+  description="레이어 그룹"
+/>
+<KeyboardShortcut
+  keys={["Ctrl", "S"]}
+  mac={["Cmd", "S"]}
+  description="저장"
+/>
+
+## 😵 이게 안 돼요 (자주 묻는 문제)
+
+- **Q**: 마스크가 너무 어색하게 잘려요.
+  **A**: **선택 > 수정 > 축소 1px + 페더 1px** 을 넣은 뒤 마스크에 반영하면
+  자연스러워져요. 경계가 보이면 경도 낮은 브러시로 다듬어요.
+
+- **Q**: 텍스트가 배경에 묻혀 보여요.
+  **A**: 레이어 스타일 **그림자(Drop Shadow)** 를 살짝 주거나 텍스트
+  뒤에 **반투명 어두운 사각형** 을 깔아요. 가독성이 크게 올라가요.
+
+- **Q**: PNG로 저장했는데 파일이 너무 커요.
+  **A**: **파일 > 내보내기 > 웹용으로 저장(이전)** 을 써보세요. 또는
+  해상도를 72ppi인지 다시 확인. 1080 이미지가 2-3MB를 넘지 않아야 해요.
+
+## 🧭 다음 레슨
+
+<NextLessonCard currentSlug="project-1-birthday-card" />

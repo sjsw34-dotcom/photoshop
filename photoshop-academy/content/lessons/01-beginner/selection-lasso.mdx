@@ -1,0 +1,251 @@
+---
+title: "올가미로 자유롭게 선택"
+level: 1
+order: 17
+duration: 50
+slug: "selection-lasso"
+prerequisites: ["selection-rect-oval"]
+objectives:
+  - "세 가지 올가미 도구의 차이를 말할 수 있다"
+  - "각 도구로 원하는 모양을 따라 선택할 수 있다"
+  - "잘못 그은 선택을 더하고 빼서 가다듬을 수 있다"
+keyTerms: ["올가미 도구", "다각형 올가미", "자석 올가미"]
+practiceFile: null
+hasPractice: true
+---
+
+## 🎯 오늘의 목표
+
+네모와 원 밖의 **자유로운 모양** 을 선택해볼 차례예요.
+올가미 세 종류를 한 번씩 써봐요.
+
+## 🍎 일상 비유로 먼저 이해하기
+
+소몰이꾼이 **밧줄로 소 한 마리에 원을 던져** 잡는 장면을 떠올려요.
+포토샵의 올가미도 원하는 대상 주위를 **죽 따라가면서 올가미로
+감싸는** 방식이에요.
+
+그런데 손으로 따라 그리는 건 잘 안 맞아요. 그래서 포토샵은 세 가지
+버전의 올가미를 줘요.
+
+- **보통 올가미**: 마우스로 자유 곡선 그리듯 손으로 그려요.
+- **다각형 올가미**: 점을 찍으면 점끼리 직선으로 이어져요.
+- **자석 올가미**: 경계선을 자동으로 감지해 자석처럼 붙어요.
+
+## 📖 핵심 개념
+
+### 보통 올가미(Lasso Tool, L)
+
+마우스를 누른 채 이동한 경로가 그대로 선택 경계가 돼요. 빠르지만
+손떨림이 그대로 남아요. **대강 거친 선택** 에 적합해요.
+
+### 다각형 올가미(Polygonal Lasso)
+
+클릭할 때마다 점이 찍히고, 점과 점 사이가 **직선** 으로 이어져요.
+**모서리가 각진 물체** 에 잘 맞아요. 마지막 점은 시작점과 만나게
+클릭하거나 **더블클릭** 으로 닫아요.
+
+### 자석 올가미(Magnetic Lasso)
+
+마우스를 따라 이동하면서 **대비가 큰 경계** 를 자동으로 감지해요.
+경계가 선명한 사진에서는 거의 알아서 따라줘요. 흐릿한 경계에서는
+헛도는 경우가 많아요.
+
+도중에 빗나가면 **Backspace** 로 마지막 점을 하나씩 지울 수 있어요.
+
+<Callout type="tip" title="자석 올가미의 폭과 대비">
+옵션 바에서 **폭(Width)**, **대비(Contrast)** 를 조절할 수 있어요.
+경계가 약한 사진에서는 **폭을 작게(5px), 대비를 낮게(10%)** 두면
+좀 더 잘 따라가요.
+</Callout>
+
+### 세 도구의 단축키 묶음
+
+**L** 키 하나로 **올가미 묶음** 을 전환해요. **Shift+L** 을 반복해서
+눌러 보통 → 다각형 → 자석 → 보통 순으로 순환해요.
+
+### 더하기와 빼기
+
+사각형 선택 때와 똑같아요. **Shift + 드래그** 로 더하고, **Alt +
+드래그** 로 빼요. 처음 한 번에 깔끔하게 안 되면 이 기능으로 계속
+다듬으면 돼요.
+
+## 🖱️ 따라하기
+
+<StepGuide>
+  <Step number={1} title="인물 사진을 열어요">
+    배경과 인물이 분명히 구분되는 사진을 열어요. 흰 벽 앞에 선
+    인물 사진이 가장 좋아요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="인물이 단색 배경 앞에 서 있는 사진이 열린 화면."
+    />
+  </Step>
+
+  <Step number={2} title="보통 올가미로 대강 따라 그어봐요">
+    **L** 키를 눌러 보통 올가미를 고르고, 인물 주위를 마우스로 쭉
+    그려요. 마지막에 시작점 근처로 돌아오면 자동으로 닫혀요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="손으로 그린 거친 선택 경계가 인물 주위를 감싸고 있는 화면."
+    />
+  </Step>
+
+  <Step number={3} title="다각형 올가미로 다시 시도해요">
+    **Ctrl+D** 로 선택을 해제해요. **Shift+L** 을 한 번 눌러 다각형
+    올가미로 바꿔요. 인물 윤곽을 따라 **직선 구간마다 한 번씩** 클릭해요.
+    마지막에 시작점을 더블클릭해 닫아요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="점을 찍어 만든 다각형 선택 경계가 인물을 감싸고 있는 화면."
+    />
+    <TroubleShoot>
+      잘못 찍은 점은 **Backspace** 로 한 칸씩 지울 수 있어요. 완전히
+      다시 하려면 **Esc** 를 눌러요.
+    </TroubleShoot>
+  </Step>
+
+  <Step number={4} title="자석 올가미로 세 번째 시도">
+    다시 해제한 뒤 **Shift+L** 을 한 번 더 눌러 자석 올가미로 바꿔요.
+    인물 경계에 마우스를 천천히 따라 옮기기만 해요. 포토샵이 자동으로
+    점을 찍어요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="자석 올가미가 인물 경계를 따라 자동으로 점을 찍어가는 화면."
+    />
+  </Step>
+
+  <Step number={5} title="빗나간 부분을 더해서 보정해요">
+    자석 올가미가 놓친 영역이 있다면, **보통 올가미로 Shift + 드래그** 해서
+    그 부분을 선택에 **더해요**.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="보통 올가미로 빗나간 영역을 Shift 드래그로 선택에 추가하는 모습."
+    />
+  </Step>
+
+  <Step number={6} title="초과된 부분은 빼요">
+    반대로 너무 많이 잡힌 부분은 **Alt + 드래그** 로 빼요. 원하는 모양이
+    될 때까지 더하기/빼기를 반복해요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="Alt 드래그로 선택 영역에서 초과된 부분을 빼고 있는 모습."
+    />
+  </Step>
+
+  <Step number={7} title="배경을 지워 결과를 확인해요">
+    **Ctrl+Shift+I** 로 선택 반전한 뒤 **Delete** 를 눌러요.
+    인물만 남고 배경이 투명으로 뚫려요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="배경이 지워지고 인물만 남아 투명 체크무늬 위에 있는 화면."
+    />
+  </Step>
+</StepGuide>
+
+## ✅ 오늘의 체크리스트
+
+<Checklist
+  lessonSlug="selection-lasso"
+  items={[
+    { id: "lasso-free", text: "보통 올가미로 자유 곡선을 그어봤다" },
+    { id: "lasso-poly", text: "다각형 올가미로 점을 찍어 선택을 만들었다" },
+    { id: "lasso-magnet", text: "자석 올가미로 경계 감지를 경험했다" },
+    { id: "add-subtract", text: "Shift/Alt로 선택을 더하고 뺐다" },
+  ]}
+/>
+
+## 🧠 이해도 퀴즈
+
+<Quiz lessonSlug="selection-lasso">
+  <Question
+    id="q1"
+    prompt="Q1. 직선으로 각진 물체(책, 휴대폰 등)에 가장 어울리는 도구는?"
+    options={[
+      { text: "보통 올가미" },
+      { text: "다각형 올가미", correct: true },
+      { text: "원형 선택 윤곽" },
+      { text: "브러시 도구" },
+    ]}
+    explanation="다각형 올가미는 점을 찍으면 직선으로 이어줘요. 모서리가 분명한 물체에 딱 맞아요."
+  />
+  <Question
+    id="q2"
+    prompt="Q2. 자석 올가미 사용 중 잘못 찍힌 점 하나만 되돌리려면?"
+    options={[
+      { text: "Ctrl+Z" },
+      { text: "Esc" },
+      { text: "Backspace (또는 Delete)", correct: true },
+      { text: "Shift+클릭" },
+    ]}
+    explanation="Backspace는 마지막 점을 한 개씩 되돌려요. Esc는 선택 자체를 포기해요."
+  />
+  <Question
+    id="q3"
+    prompt="Q3. 선택이 너무 많이 잡혔을 때 사용하는 키 조합은?"
+    options={[
+      { text: "Shift + 드래그" },
+      { text: "Alt + 드래그", correct: true },
+      { text: "Ctrl + 드래그" },
+      { text: "그냥 다시 그린다" },
+    ]}
+    explanation="Alt 드래그는 '빼기'예요. 넘친 영역을 잘라낼 때 써요. Shift는 '더하기'."
+  />
+</Quiz>
+
+## 🎨 오늘의 실습
+
+원하는 대상을 하나 골라 배경에서 분리해봐요.
+
+- **시작 사진**: 배경이 단색에 가까운 물체나 인물 사진
+- **내 결과**: 대상만 남고 배경이 투명(체크무늬)으로 뚫린 상태.
+
+<PracticeCompare
+  lessonSlug="selection-lasso"
+  goal="올가미 계열 도구로 대상을 선택해 배경을 투명으로 분리하기"
+  startHint="오늘은 완벽한 경계를 목표로 하지 말고, 올가미 세 종류의 느낌을 익히는 데 집중해요."
+  checklist={[
+    "대상 외곽이 대체로 따라 잡혀 있다",
+    "배경이 투명 체크무늬로 뚫려 있다",
+    "대상 내부는 전혀 지워지지 않았다",
+  ]}
+/>
+
+## 🔑 꼭 기억할 단축키
+
+<KeyboardShortcut
+  keys={["L"]}
+  description="올가미 계열 도구"
+/>
+<KeyboardShortcut
+  keys={["Shift", "L"]}
+  description="올가미 종류 순환 (보통 → 다각형 → 자석)"
+/>
+<KeyboardShortcut
+  keys={["Backspace"]}
+  description="자석/다각형 올가미에서 마지막 점 취소"
+/>
+<KeyboardShortcut
+  keys={["Esc"]}
+  description="올가미 선택 완전 취소"
+/>
+
+## 😵 이게 안 돼요 (자주 묻는 문제)
+
+- **Q**: 자석 올가미가 경계 대신 엉뚱한 곳에 붙어요.
+  **A**: 배경과 대상의 **색 대비** 가 낮을 때 그래요. 옵션 바에서
+  **대비(Contrast)** 를 낮추거나, 아예 다각형 올가미로 바꿔
+  수동으로 점을 찍어요.
+
+- **Q**: 다각형 올가미가 닫히지 않고 계속 늘어져요.
+  **A**: 시작점 근처에서 **마우스 커서 옆에 작은 동그라미** 가
+  나타날 때 클릭해야 닫혀요. 어디서든 **더블클릭** 하면 현재
+  커서 위치에서 직선으로 시작점까지 이어 자동으로 닫아줘요.
+
+- **Q**: 올가미로 그리는데 자꾸 끊어져요.
+  **A**: 보통 올가미는 마우스 버튼을 **끝까지** 누르고 있어야 해요.
+  손을 놓는 순간 그 지점에서 바로 시작점까지 직선으로 닫혀요.
+
+## 🧭 다음 레슨
+
+<NextLessonCard currentSlug="selection-lasso" />

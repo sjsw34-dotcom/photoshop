@@ -1,0 +1,254 @@
+---
+title: "한글 폰트 다루기 (주의점 포함)"
+level: 1
+order: 33
+duration: 50
+slug: "korean-fonts"
+prerequisites: ["text-tool-basics"]
+objectives:
+  - "한글 폰트와 영문 폰트의 차이를 설명할 수 있다"
+  - "한글 지원 여부를 미리 확인할 수 있다"
+  - "무료로 쓸 수 있는 한글 폰트를 설치하고 사용할 수 있다"
+keyTerms: ["한글 폰트", "라이선스", "웹폰트"]
+practiceFile: null
+hasPractice: true
+---
+
+## 🎯 오늘의 목표
+
+한국 디자이너가 매일 맞닥뜨리는 문제, **한글 폰트** 를 오늘 정리해요.
+앞으로 **네모(□) 사태** 를 안 겪게 해요.
+
+## 🍎 일상 비유로 먼저 이해하기
+
+한국어 글자는 **자음 + 모음 + 받침** 조합이 11,172가지예요.
+영어는 알파벳 52글자만 있으면 돼요. 그래서 **한글을 다루는 폰트** 는
+만드는 사람 입장에서 훨씬 큰 작업이에요.
+
+많은 영문 폰트는 **한글 글리프(글자 모양)를 포함하지 않아서** 글자를
+넣으면 **빈 네모** 가 나와요. 한글을 쓰려면 **한글 지원 폰트** 를 써야 해요.
+
+## 📖 핵심 개념
+
+### 무료로 쓸 수 있는 한글 폰트 대표 3개
+
+이 세 가지만 알아두면 학생 수준의 모든 작업을 커버해요.
+
+| 이름 | 특징 | 추천 용도 |
+|---|---|---|
+| **Pretendard** | 현대적이고 읽기 좋음. 굵기 9단계 | 거의 모든 용도 (사이트/앱) |
+| **Noto Sans KR** | 구글 제작, 안정적 | 본문 |
+| **나눔스퀘어 라운드** | 둥글고 부드러움 | 카드, 일상 디자인 |
+
+### 폰트 설치 위치
+
+- **Windows**: `C:\Windows\Fonts` 에 `.ttf` / `.otf` 파일을 **복사** 하면
+  자동 설치. 또는 파일 우클릭 > **설치**.
+- **Mac**: 파일을 더블클릭하면 **Font Book** 이 열리고 **설치** 버튼.
+
+설치 후 포토샵을 **재시작** 해야 폰트 목록에 반영돼요.
+
+### 한글 지원 확인 빠른 방법
+
+폰트를 고른 뒤 캔버스에 **"한글 테스트"** 를 쳐봐요. 정상이면 정확히
+한글이 보이고, 지원이 없으면 **네모** 가 나와요.
+
+또 다른 방법: **문자 패널** 의 폰트 목록에서 폰트 이름 옆에 **한글 예시**
+가 있는지 확인해요.
+
+### 라이선스 주의
+
+- **개인 연습용**: 거의 모든 폰트 자유
+- **상업적 사용(포트폴리오, 수업 과제 제출 포함)**: **폰트 라이선스** 를
+  반드시 확인해요.
+- Pretendard, 나눔 폰트, Noto 계열은 **상업적 사용도 자유(OFL)** 예요.
+- 유료 폰트(산돌, 아모레 등)는 **구매/구독이 필요** 해요.
+
+<Callout type="warning" title="폰트 도용은 자주 있는 법적 사고예요">
+"혹시 자작한 거 아닌데 인터넷에서 받은 게 상업용이었다" 같은 사고가
+학생 포트폴리오에서 자주 터져요. 믿을 만한 출처의 **무료 폰트 사이트**
+를 고르세요. 대표 사이트: **눈누(noonnu.cc)**, **Google Fonts**.
+</Callout>
+
+### 자간과 행간(다음 레슨 스포일러)
+
+한글은 **자간(글자 간격)** 과 **행간(줄 사이 간격)** 을 세심하게 맞춰야
+깔끔해 보여요. 다음 레슨에서 자세히 다뤄요.
+
+## 🖱️ 따라하기
+
+<StepGuide>
+  <Step number={1} title="Pretendard 폰트를 받아요">
+    **pretendard.cactus.tistory.com** 또는 GitHub **orioncactus/pretendard**
+    에서 **Pretendard.zip** 을 받아요. 압축을 풀면 `.otf` 파일들이 나와요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="Pretendard 압축 해제 후 .otf 파일들이 폴더에 나열된 모습."
+    />
+  </Step>
+
+  <Step number={2} title="폰트를 설치해요">
+    **Pretendard-Regular.otf** 파일을 **더블클릭** 하면 미리보기 창이 열려요.
+    **설치(Install)** 버튼을 클릭해요.
+    (Mac은 Font Book이 열려요. Install Font 버튼 클릭.)
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="폰트 설치 미리보기 창에서 Install 버튼이 강조된 모습."
+    />
+    <TroubleShoot>
+      "이미 설치되어 있음" 같은 메시지가 나오면 이미 OK. **취소** 해도
+      설치된 상태입니다.
+    </TroubleShoot>
+  </Step>
+
+  <Step number={3} title="포토샵을 재시작해요">
+    **포토샵을 종료** 했다가 다시 열어요. 그렇지 않으면 새 폰트가 목록에
+    안 나타날 수 있어요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="포토샵을 재시작하고 다시 열리는 스플래시 화면."
+    />
+  </Step>
+
+  <Step number={4} title="Pretendard로 한글을 써요">
+    새 문서를 만들고 **T** 로 텍스트 도구를 잡아요. 옵션 바 폰트 드롭다운
+    에서 **Pretendard** 를 선택하고 한글 문장을 타이핑해요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="Pretendard 폰트로 한글이 선명하게 표시된 캔버스."
+    />
+  </Step>
+
+  <Step number={5} title="다른 폰트로 바꿔서 비교">
+    **Arial** 이나 **Times New Roman** 같은 영문 전용 폰트로 바꿔서 같은
+    한글 문장이 **네모** 로 바뀌는 걸 확인해요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="영문 폰트로 바뀌면서 한글이 네모 기호로만 표시된 캔버스."
+    />
+  </Step>
+
+  <Step number={6} title="다시 Pretendard로 복구해요">
+    같은 텍스트 레이어에서 폰트만 Pretendard로 되돌려요. 한글이 정상으로
+    돌아와요. 폰트만 바꾸면 **레이어 자체는 그대로** 인 걸 확인할 수 있어요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="Pretendard로 다시 바꾸어 한글이 정상으로 돌아온 결과."
+    />
+  </Step>
+
+  <Step number={7} title="굵기(Weight) 시험">
+    같은 Pretendard 안에서 **Light / Regular / Bold / Black** 으로 바꿔봐요.
+    같은 글자가 얼마나 다르게 보이는지 관찰해요.
+    <Screenshot
+      src="/screenshots/placeholder.svg"
+      alt="Pretendard의 Light·Regular·Bold·Black 네 굵기가 같은 텍스트에 적용되어 비교된 화면."
+    />
+  </Step>
+</StepGuide>
+
+## ✅ 오늘의 체크리스트
+
+<Checklist
+  lessonSlug="korean-fonts"
+  items={[
+    { id: "download", text: "Pretendard(또는 다른 한글 폰트)를 받았다" },
+    { id: "install", text: "폰트를 설치했다" },
+    { id: "restart", text: "포토샵을 재시작했다" },
+    { id: "use-korean", text: "한글이 네모(□) 없이 표시되는 것을 확인했다" },
+    { id: "weights", text: "같은 폰트의 여러 굵기를 바꿔 비교했다" },
+  ]}
+/>
+
+## 🧠 이해도 퀴즈
+
+<Quiz lessonSlug="korean-fonts">
+  <Question
+    id="q1"
+    prompt="Q1. 한글이 포토샵에서 네모(□)로 표시되는 이유는?"
+    options={[
+      { text: "파일이 손상되었다" },
+      { text: "선택된 폰트에 한글 글리프가 없다", correct: true },
+      { text: "해상도가 낮다" },
+      { text: "레이어가 잠겨 있다" },
+    ]}
+    explanation="영문 전용 폰트는 한글 글자 모양을 포함하지 않아요. 한글 지원 폰트로 바꾸면 해결돼요."
+  />
+  <Question
+    id="q2"
+    prompt="Q2. 새 폰트를 설치하고 포토샵에 반영하려면?"
+    options={[
+      { text: "포토샵을 재시작한다", correct: true },
+      { text: "새 문서를 만든다" },
+      { text: "캔버스를 확대한다" },
+      { text: "파일을 닫았다가 연다" },
+    ]}
+    explanation="포토샵은 시작 시 폰트 목록을 읽어요. 재시작 없이는 새 폰트가 안 보일 수 있어요."
+  />
+  <Question
+    id="q3"
+    prompt="Q3. 상업용 결과물(포트폴리오 등)에 안심하고 쓸 수 있는 무료 한글 폰트는?"
+    options={[
+      { text: "아모레 서체 (유료 라이선스)" },
+      { text: "Pretendard (OFL)", correct: true },
+      { text: "불법 배포본" },
+      { text: "출처 불명 폰트" },
+    ]}
+    explanation="Pretendard는 오픈폰트라이선스(OFL)로 배포돼 상업적 사용이 자유로워요. 포트폴리오에 안전해요."
+  />
+</Quiz>
+
+## 🎨 오늘의 실습
+
+같은 문장을 세 가지 굵기로 비교하는 스타일 샘플을 만들어봐요.
+
+- **시작 사진**: 빈 1080x1080 캔버스
+- **내 결과**: 같은 문장(예: **"내 포토샵 여정"**)을 세로로 3줄, 각 줄이
+  **Light / Regular / Bold** 세 굵기로 나란히 표시된 상태.
+
+<PracticeCompare
+  lessonSlug="korean-fonts"
+  goal="한 한글 문장을 3가지 굵기로 세로 정렬해 '폰트 굵기 시연' 이미지 만들기"
+  startHint="각 줄의 크기를 동일하게 유지하고 굵기만 다르게 하면 차이가 잘 보여요."
+  checklist={[
+    "세 줄 모두 한글이 네모(□) 없이 표시된다",
+    "같은 폰트의 다른 굵기가 적용돼 있다",
+    "세 줄이 가로 폭이 비슷하게 맞춰 있다",
+  ]}
+/>
+
+## 🔑 꼭 기억할 단축키
+
+<KeyboardShortcut
+  keys={["T"]}
+  description="텍스트 도구"
+/>
+<KeyboardShortcut
+  keys={["Ctrl", "Shift", ">"]}
+  mac={["Cmd", "Shift", ">"]}
+  description="선택 텍스트 크기 2pt 키우기"
+/>
+<KeyboardShortcut
+  keys={["Ctrl", "Shift", "<"]}
+  mac={["Cmd", "Shift", "<"]}
+  description="선택 텍스트 크기 2pt 줄이기"
+/>
+
+## 😵 이게 안 돼요 (자주 묻는 문제)
+
+- **Q**: 폰트 설치했는데 목록에 없어요.
+  **A**: 포토샵을 **완전히 종료** 후 재시작하세요. 그래도 없으면 폰트
+  파일을 삭제했다가 다시 설치해요. macOS는 **Font Book > 확인(Validate)** 으로
+  충돌 여부를 확인할 수 있어요.
+
+- **Q**: 폰트 목록이 너무 길어서 찾기 힘들어요.
+  **A**: 옵션 바 폰트 드롭다운에서 **폰트 이름 일부** 를 타이핑하면 자동
+  필터링돼요. "pretend"만 쳐도 Pretendard가 바로 나와요.
+
+- **Q**: 폰트가 **두껍게** 안 나와요.
+  **A**: 많은 한글 폰트는 Bold 스타일이 별도로 설치돼야 해요. Pretendard
+  설치 시 **모든 굵기** 파일을 한꺼번에 설치했는지 확인해요.
+
+## 🧭 다음 레슨
+
+<NextLessonCard currentSlug="korean-fonts" />
